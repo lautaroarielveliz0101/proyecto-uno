@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  /* Color principal */
+  --color-primary: #008dd2;
+  /* Variaciones */
+  --color-primary-light: #20a5e6;
+  --color-primary-dark: #116b97;
+  /* Saturación */
+  --color-primary-saturated: #0096ec;
+  --color-primary-desaturated: #1586bd;
+  /* Colores complementarios */
+  --color-inverted: #ff722d;
+  --color-teal: #008080;
+  --color-steelblue: #4682b4;
+  /* Escala de grises */
+  --color-gray: #696969;
+  /* Fuente */
+  --font-primary: "DM Sans", sans-serif;
+}
