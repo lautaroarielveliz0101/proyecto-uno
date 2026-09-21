@@ -1,0 +1,45 @@
+.card .col-md-4 img {
+    border-radius: 4px 4px 4px 4px;
+}
+.evento-card .col-md-4 {
+    display: flex;
+}
+
+.evento-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.btn-inscribirme{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 6px 20px;
+     transition: background-color 0.4s ease, color 0.4s ease;
+     font-family: "DM Sans", sans-serif;
+}
+.btn-informacion{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 6px 20px;
+    transition: background-color 0.4s ease, color 0.4s ease; 
+    font-family: "DM Sans", sans-serif;
+}
+
+.btn-inscribirme:hover{
+    background-color: #20a5e6;
+    color: white;
+}
+.btn-informacion:hover {
+  background-color: #20a5e6;
+  color: white;
+}
+.text-center{
+    font-family: "DM Sans", sans-serif;
+}
+.evento-categoria, .card-title, .card-text{
+    font-family: "DM Sans", sans-serif;
+}
