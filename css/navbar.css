@@ -29,10 +29,11 @@ nav {
     }
         & .search {
             flex: 1;
-            max-width: 500px;
+            max-width: 600px;
             min-width: 0;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
             & span {
                 display: flex;
@@ -46,14 +47,14 @@ nav {
             flex: 1;
             min-width: 0;
             background-color: rgb(224, 224, 224);
+            outline: rgb(190, 190, 190) solid 1px;
         }
         & .cart {
-            width: 120px;
+            width: 35px;
             flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 3px;
             & svg {
                 color: #ff722d;
             }
