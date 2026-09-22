@@ -1,45 +1,114 @@
-.card .col-md-4 img {
-    border-radius: 4px 4px 4px 4px;
-}
-.evento-card .col-md-4 {
-    display: flex;
+/* .btn-inscribirme {
+    background-color: var(--color-btn);  
+    color: black;
+    border-radius: 10px;
+    padding: 6px 20px;
+    transition: background-color 0.6s ease, color 0.6s ease;
+     font-size: 0.85rem;
+  font-weight: 700;       */
+
+
+.btn-informacion, .btn-inscribirme {
+    /* background-color: white; */
+    color: white;
+    border-radius: 40px;
+    padding: 12px 24px;
+    transition: background-color 0.6s ease, color 0.6s ease; 
+     background-color: var(--color-btn);   
+      font-size: 0.85rem;
+  font-weight: 700;   
+  width: 50%;
+ 
+    
 }
 
-.evento-img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-.btn-inscribirme{
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 6px 20px;
-     transition: background-color 0.4s ease, color 0.4s ease;
-     font-family: "DM Sans", sans-serif;
-}
-.btn-informacion{
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 6px 20px;
-    transition: background-color 0.4s ease, color 0.4s ease; 
-    font-family: "DM Sans", sans-serif;
-}
-
-.btn-inscribirme:hover{
+.btn-inscribirme:hover,
+.btn-informacion:hover {
     background-color: #20a5e6;
     color: white;
 }
-.btn-informacion:hover {
-  background-color: #20a5e6;
-  color: white;
-}
-.text-center{
+
+.text-center,
+.evento-categoria, 
+.card-title, 
+.card-text {
     font-family: "DM Sans", sans-serif;
 }
-.evento-categoria, .card-title, .card-text{
-    font-family: "DM Sans", sans-serif;
+
+section.eventos .evento-card {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+section.eventos .evento-card .row {
+    margin: 0;
+    height: 100%;
+}
+section.eventos .evento-card .evento-img {
+    transition: transform 0.4s ease-in-out;
+}
+
+section.eventos .evento-card:hover .evento-img {
+    transform: scale(1.05); 
+}
+
+
+section.eventos .evento-card .col-md-4 {
+    padding: 0;
+    margin: 0;
+}
+
+section.eventos .evento-img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+section.eventos .evento-card .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section.eventos .contenedor-botones {
+    margin-top: 15px;
+}
+.evento-card{
+    box-shadow: 7px 5px 16px 4px rgba(0,0,0,0.64);
+-webkit-box-shadow: 7px 5px 16px 4px rgba(0,0,0,0.64);
+-moz-box-shadow: 7px 5px 16px 4px rgba(0,0,0,0.64);
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+.text-center>h1{
+    
+    font-weight: 960;
+    font-weight: bold;
+    font-family: var(--font-category);
+}
+
+@media (min-width: 768px) {
+    section.eventos .evento-card .col-md-4 {
+        position: relative;
+        min-height: 100%;
+    }
+
+    section.eventos .evento-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    section.eventos .contenedor-botones {
+        margin-top: auto;
+        padding-top: 15px;
+    }
 }
