@@ -13,19 +13,22 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/base.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/category.css" />
@@ -81,10 +84,19 @@
             placeholder="   Buscar productos, cursos o eventos"
           />
         </div>
+        <div class="login">
+          <a href="/pages/login.html">
+            <button class="register1">Iniciar Sesión</button>
+          </a>
+          <a href="/pages/register.html">
+            <button class="register2">Crear Cuenta</button>
+          </a>
+        </div>
+
         <div class="cart">
           <a href="/pages/cart.html">
             <button class="buttonCart">
-              <span>Carrito</span>
+              <!-- <span>Carrito</span> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -98,14 +110,6 @@
                 />
               </svg>
             </button>
-          </a>
-        </div>
-        <div class="login">
-          <a href="/pages/login.html">
-            <button class="register1">Iniciar Sesión</button>
-          </a>
-          <a href="/pages/register.html">
-            <button class="register2">Crear Cuenta</button>
           </a>
         </div>
       </div>
@@ -177,6 +181,71 @@
     <main>
       <!-- INICIO SLIDER CON PROMOCIONES -->
 
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assets/img/banner1.png"
+              class="d-block w-100"
+              alt="banner1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/img/banner2.png"
+              class="d-block w-100"
+              alt="banner2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/img/banner3.png"
+              class="d-block w-100"
+              alt="banner3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
       <!-- FIN SLIDER CON PROMOCIONES -->
 
