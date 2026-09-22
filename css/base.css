@@ -13,6 +13,7 @@
   /* Saturación */
   --color-primary-saturated: #0096ec;
   --color-primary-desaturated: #1586bd;
+  --color-btn: #004b6e;
   /* Colores complementarios */
   --color-inverted: #ff722d;
   --color-teal: #008080;
@@ -21,5 +22,8 @@
   --color-gray: #696969;
   /* Fuente */
   --font-primary: "DM Sans", sans-serif;
+  --color-primary-base: #ffffff;
+  --font-category: "Montserrat", sans-serif;
+
 }
 

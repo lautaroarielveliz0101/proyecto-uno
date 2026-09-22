@@ -8,14 +8,18 @@
   <link rel="icon" type="image/png" href="./assets/img/logo.jpeg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet" /> <!-- fuente categoria -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/category.css" />
   <link rel="stylesheet" href="./css/events.css">
 </head>
 
@@ -127,7 +131,70 @@
 
     <!-- FIN SLIDER CON PROMOCIONES -->
     <!-- INICIO CATEGORIAS -->
-
+       <div class="ConteinerCategory">
+        <h1>Explorá por categoria</h1>
+        <p>Encontra todo lo necesario para tu disciplina deportiva con productos testeados por atletas</p>
+<div class="row row-cols-1 row-cols-md-3 g-3">
+  <div class="col">
+    <div class="cardCategory h-100">
+      <div class="cardImgText">
+      <img src="./assets/img/CategoryTaining.jfif" class="card-img-top" alt="...">
+      <span class="badgeCategoryCertification">Certificaciones</span>
+      <div class="overlayText">
+      <small class="subTitle">ACADEMIA SPORTAR</small>
+      <h3 class="mainTitle">Formación</h3>
+    </div>
+      </div>
+      <div class="cardBody">
+       <!-- <h5 class="card-title">Card title</h5>  --> 
+        <p class="card-text"> Cursos, certificaciones avaladas y masterclasses exclusivas dictadas por preparadores físicos y entrenadores de élite internacional.</p>
+        <a href="#" class="btnCard">
+          <span>VER DETALLE</span>
+          <i class="bi bi-arrow-right">+</i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="cardCategory h-100">
+       <div class="cardImgText">
+      <img src="./assets/img/equipment category.jfif" class="card-img-top" alt="...">
+      <span class="badgeCategory">Pro Gear Oficial</span>
+      <div class="overlayText">
+      <small class="subTitle">ALTO RENDIMENTO</small>
+      <h3 class="mainTitle">Equipamiento</h3>
+    </div>
+      </div>
+      <div class="cardBody">
+        <p class="card-text"> Indumentaria técnica de competición, calzado de propulsión con placa de carbono, accesorios, barrras, mancuernas y más.</p>
+        <a href="#" class="btnCard">
+          <span>VER DETALLE</span>
+          <i class="bi bi-arrow-right">+</i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="cardCategory h-100">
+      <div class="cardImgText">
+      <img src="./assets/img/eventsCategory.jfif" class="card-img-top" alt="...">
+      <span class="badgeCategory">Calendario 2026</span>
+      <div class="overlayText">
+      <small class="subTitle">COMPETICIÓN OFICIAL</small>
+      <h3 class="mainTitle">Eventos</h3>
+    </div>
+      </div>
+      <div class="cardBody">
+        <p class="card-text">Maratones 21K/42K, torneos de cross training, pruebas ciclistas, charlas, conferencias y más.</p>
+        <a href="#" class="btnCard">
+          <span>VER DETALLE</span>
+          <i class="bi bi-arrow-right">+</i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
     <!-- FIN CATEGORIAS -->
     <!-- INICIO PUBLICIDAD 1 -->
 
@@ -148,12 +215,12 @@
 
     <div class="row g-4">
 
-      <!-- TARJETA 1 -->
+      <!-- EVENTO 1 -->
       <div class="col-lg-6">
         <div class="card evento-card h-100">
-          <div class="row g-0 h-100">
-            <div class="col-md-4">
-              <img src="./assets/img/listos-preparados-runners-tucumanos-estan-expectantes-esperando-llegue-momento-largada-21k-la-gaceta-1154391-115934.jpg" class="img-fluid evento-img" alt="Maratón La Gaceta">
+          <div class="row g-0">
+            <div class="col-md-4 p-0">
+              <img src="./assets/img/runner.jpg" class="img-fluid evento-img" alt="Maratón La Gaceta">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -163,8 +230,8 @@
                   La competencia se realizará el domingo 11 de octubre donde la largada será en el parque 9 de Julio.
                 </p>
                 <div class="contenedor-botones d-flex justify-content-between">
-                  <button class="btn-inscribirme">Inscribirme</button>
-                  <button class="btn-informacion" data-bs-toggle="modal" data-bs-target="#modalEvento1">Información</button>
+                  <button class="btn-inscribirme">INSCRIBIRME</button>
+                  <button class="btn-informacion" data-bs-toggle="modal" data-bs-target="#modalEvento1">INFORMACIÓN</button>
                 </div>
               </div>
             </div>
@@ -175,9 +242,9 @@
       <!-- EVENTO 2 -->
       <div class="col-lg-6">
         <div class="card evento-card h-100">
-          <div class="row g-0 h-100">
-            <div class="col-md-4">
-              <img src="./assets/img/viaducto.jpeg" class="img-fluid evento-img" alt="Gran Travesía al Viaducto">
+          <div class="row g-0">
+            <div class="col-md-4 p-0">
+              <img src="./assets/img/viaducto.jpg" class="img-fluid evento-img" alt="Gran Travesía al Viaducto">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -187,8 +254,8 @@
                   El próximo 4 de octubre se realizará la segunda edición de la Gran Travesía al Viaducto con distancias de 3, 10 y 24K.
                 </p>
                 <div class="contenedor-botones d-flex justify-content-between">
-                  <button class="btn-inscribirme">Inscribirme</button>
-                  <button class="btn-informacion" data-bs-toggle="modal" data-bs-target="#modalEvento2">Información</button>
+                  <button class="btn-inscribirme">INSCRIBIRME</button>
+                  <button class="btn-informacion" data-bs-toggle="modal" data-bs-target="#modalEvento2">INFORMACIÓN</button>
                 </div>
               </div>
             </div>
@@ -199,8 +266,8 @@
       <!-- EVENTO 3 -->
       <div class="col-lg-6">
         <div class="card evento-card h-100">
-          <div class="row g-0 h-100">
-            <div class="col-md-4">
+          <div class="row g-0">
+            <div class="col-md-4 p-0">
               <img src="./assets/img/tenis.jpg" class="img-fluid evento-img" alt="Torneo Nacional de Tenis">
             </div>
             <div class="col-md-8">
@@ -211,8 +278,8 @@
                   Torneo Nacional de Tenis que se realizará los días 24, 25 y 26 de septiembre.
                 </p>
                 <div class="contenedor-botones d-flex justify-content-between">
-                  <button class="btn-inscribirme">Inscribirme</button>
-                  <button class="btn-informacion" data-bs-toggle="modal" data-bs-target="#modalEvento3">Información</button>
+                  <button class="btn-inscribirme">INSCRIBIRME</button>
+                  <button class="btn-informacion" data-bs-toggle="modal" data-bs-target="#modalEvento3">INFORMACIÓN</button>
                 </div>
               </div>
             </div>
@@ -223,9 +290,9 @@
       <!-- EVENTO 4 -->
       <div class="col-lg-6">
         <div class="card evento-card h-100">
-          <div class="row g-0 h-100">
-            <div class="col-md-4">
-              <img src="./assets/img/atletismo.jpg" class="img-fluid evento-img" alt="Torneo Provincial de Atletismo">
+          <div class="row g-0">
+            <div class="col-md-4 p-0">
+              <img src="./assets/img/atlet.jpg" class="img-fluid evento-img" alt="Torneo Provincial de Atletismo">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -235,8 +302,8 @@
                   Se realizará el sábado 24 de octubre en el Complejo Deportivo Democracia.
                 </p>
                 <div class="contenedor-botones d-flex justify-content-between">
-                  <button class="btn-inscribirme">Inscribirme</button>
-                  <button class="btn-informacion" data-bs-toggle="modal" data-bs-target="#modalEvento4">Información</button>
+                  <button class="btn-inscribirme">INSCRIBIRME</button>
+                  <button class="btn-informacion" data-bs-toggle="modal" data-bs-target="#modalEvento4">INFORMACIÓN</button>
                 </div>
               </div>
             </div>
