@@ -1,0 +1,103 @@
+main {
+    width: 100%;
+}
+
+.grupal {
+  font-family: "DM Sans", sans-serif;
+  font-style: italic;
+  padding-top: 10px;
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tamaño de la tarjeta */
+.card-flip {
+  width: 1000px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+/* Elemento que realiza el giro */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+/* Giro al pasar el mouse */
+.card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Frente y atrás */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+}
+
+/* Imágenes */
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+/* Imagen trasera */
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* Texto */
+.grupal h4 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.individual {
+    font-family: "DM Sans", sans-serif;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .card-group {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        & .card {
+            border: none;
+            background-color: rgb(224, 224, 224);
+            border-radius: 20px;
+            padding: 15px;
+            }
+            & .card:hover {
+                border-radius:50%;
+                -webkit-border-radius:50%;
+                box-shadow: 0px 0px 15px 15px grey;
+                -webkit-box-shadow: 0px 0px 15px 15px grey;
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+            }
+            & h5 {
+                 display: flex;
+                 justify-content: center;
+                 text-align: center;
+                 font-weight: 600;
+            }
+    }
+}
