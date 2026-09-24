@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deport AR</title>
+    <link rel="icon" type="image/png" href="/assets/img/logoNewWhite.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/category.css" />
+    <link rel="stylesheet" href="css/events.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="upNavbar">
+        <!-- NUEVO: botón hamburguesa (solo visible en celular/tablet) -->
+        <button
+          class="hamburger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-label="Abrir menú"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <!-- Fin de botón hamburguesa -->
+
+        <a href="/index.html">
+          <img src="/assets/img/logoNewWhite.jpg" alt="logo" />
+        </a>
+        <div class="search">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </span>
+          <input
+            type="text"
+            placeholder="   Buscar productos, cursos o eventos"
+          />
+        </div>
+        <div class="login">
+          <a href="/pages/login.html">
+            <button class="register1">Iniciar Sesión</button>
+          </a>
+          <a href="/pages/register.html">
+            <button class="register2">Crear Cuenta</button>
+          </a>
+        </div>
+
+        <div class="cart">
+          <a href="/pages/cart.html">
+            <button class="buttonCart">
+              <!-- <span>Carrito</span> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="downNavbar">
+        <div class="menu">
+          <a href="/index.html">
+            <button>INICIO</button>
+          </a>
+          <a href="/pages/category.html">
+            <button>CATEGORIAS</button>
+          </a>
+          <a href="/pages/product.html">
+            <button>EQUIPAMIENTO</button>
+          </a>
+          <a href="/pages/training.html">
+            <button>FORMACION</button>
+          </a>
+          <a href="/pages/events.html">
+            <button>EVENTOS</button>
+          </a>
+        </div>
+        <div class="menu2">
+          <a href="/pages/aboutUs.html">Nosotros</a>
+          <a href="/pages/contact.html">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NUEVO: menú lateral -->
+    <div
+      class="offcanvas offcanvas-start d-lg-none mobileMenu"
+      tabindex="-1"
+      id="mobileMenu"
+      aria-labelledby="mobileMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menú</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Cerrar"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <ul class="mobileLinks">
+          <li>
+            <a href="/pages/category.html"><button>CATEGORIAS</button></a>
+          </li>
+          <li>
+            <a href="/pages/product.html"><button>EQUIPAMIENTO</button></a>
+          </li>
+          <li>
+            <a href="/pages/training.html"><button>FORMACION</button></a>
+          </li>
+          <li>
+            <a href="/pages/events.html"><button>EVENTOS</button></a>
+          </li>
+        </ul>
+
+        <div class="mobileLogin">
+          <a href=""><button class="register1">Iniciar Sesión</button></a>
+          <a href=""><button class="register2">Crear Cuenta</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de menú lateral -->
+
+    <main>
+      <!-- INICIO SLIDER CON PROMOCIONES -->
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assets/img/banner1.png"
+              class="d-block w-100"
+              alt="banner1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/img/banner2.png"
+              class="d-block w-100"
+              alt="banner2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/img/banner3.png"
+              class="d-block w-100"
+              alt="banner3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- FIN SLIDER CON PROMOCIONES -->
+
+      <!-- INICIO CATEGORIAS -->
+      <div class="ConteinerCategory">
+        <h1>Explorá por categoria</h1>
+        <p>
+          Encontrá todo lo necesario para tu disciplina deportiva con productos
+          testeados por atletas
+        </p>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="cardCategory h-100">
+              <div class="cardImgText">
+                <img
+                  src="./assets/img/CategoryTaining.jfif"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <span class="badgeCategoryCertification">Certificaciones</span>
+                <div class="overlayText">
+                  <small class="subTitle">ACADEMIA SPORTAR</small>
+                  <h3 class="mainTitle">Formación</h3>
+                </div>
+              </div>
+              <div class="cardBody">
+                <p class="card-text">
+                  Cursos, certificaciones avaladas y masterclasses exclusivas
+                  dictadas por preparadores físicos y entrenadores de élite
+                  internacional.
+                </p>
+                <a href="./pages/error404.html" class="btnCard">
+                  <span>VER DETALLE</span>
+                  <i class="bi bi-arrow-right">+</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cardCategory h-100">
+              <div class="cardImgText">
+                <img
+                  src="./assets/img/equipment category.jfif"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <span class="badgeCategory">Pro Gear Oficial</span>
+                <div class="overlayText">
+                  <small class="subTitle">ALTO RENDIMENTO</small>
+                  <h3 class="mainTitle">Equipamiento</h3>
+                </div>
+              </div>
+              <div class="cardBody">
+                <p class="card-text">
+                  Indumentaria técnica de competición, calzado de propulsión con
+                  placa de carbono, accesorios, barrras, mancuernas y más.
+                </p>
+                <a href="./pages/error404.html" class="btnCard">
+                  <span>VER DETALLE</span>
+                  <i class="bi bi-arrow-right">+</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cardCategory h-100">
+              <div class="cardImgText">
+                <img
+                  src="./assets/img/eventsCategory.jfif"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <span class="badgeCategory">Calendario 2026</span>
+                <div class="overlayText">
+                  <small class="subTitle">COMPETICIÓN OFICIAL</small>
+                  <h3 class="mainTitle">Eventos</h3>
+                </div>
+              </div>
+              <div class="cardBody">
+                <p class="card-text">
+                  Maratones 21K/42K, torneos de cross training, pruebas
+                  ciclistas, charlas, conferencias y más.
+                </p>
+                <a href="./pages/error404.html" class="btnCard">
+                  <span>VER DETALLE</span>
+                  <i class="bi bi-arrow-right">+</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN CATEGORIAS -->
+
+      <!-- INICIO PUBLICIDAD 1 -->
+
+      <!-- FIN PUBLICIDAD 1 -->
+      <!-- INICIO EVENTOS -->
+
+      <section class="eventos py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h1>Próximos eventos y competiciones</h1>
+            <p>
+              Inscribite y sé parte de la mayor comunidad deportiva de la
+              provincia con cronometraje oficial y kits exclusivos
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- TARJETA 1 -->
+            <div class="col-lg-6">
+              <div class="card evento-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/img/runner.jpg"
+                      class="img-fluid evento-img"
+                      alt="Maratón La Gaceta"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <span class="evento-categoria">RUNNING</span>
+                      <h5 class="card-title">
+                        4° EDICIÓN DE MARATÓN LA GACETA 21, 10 y 5k
+                      </h5>
+                      <p class="card-text">
+                        La competencia se realizará el domingo 11 de octubre
+                        donde la largada será en el parque 9 de Julio.
+                      </p>
+                      <div
+                        class="contenedor-botones d-flex justify-content-between"
+                      >
+                        <button class="btn-inscribirme">INSCRIBIRME</button>
+                        <button
+                          class="btn-informacion"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalEvento1"
+                        >
+                          INFORMACIÓN
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- EVENTO 2 -->
+            <div class="col-lg-6">
+              <div class="card evento-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/img/viaducto.jpg"
+                      class="img-fluid evento-img"
+                      alt="Gran Travesía al Viaducto"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <span class="evento-categoria">TRAIL RUNNING</span>
+                      <h5 class="card-title">
+                        2° EDICIÓN DE LA GRAN TRAVESÍA AL VIADUCTO
+                      </h5>
+                      <p class="card-text">
+                        El próximo 4 de octubre se realizará la segunda edición
+                        de la Gran Travesía al Viaducto con distancias de 3, 10
+                        y 24K.
+                      </p>
+                      <div
+                        class="contenedor-botones d-flex justify-content-between"
+                      >
+                        <button class="btn-inscribirme">INSCRIBIRME</button>
+                        <button
+                          class="btn-informacion"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalEvento2"
+                        >
+                          INFORMACIÓN
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- EVENTO 3 -->
+            <div class="col-lg-6">
+              <div class="card evento-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/img/tenis.jpg"
+                      class="img-fluid evento-img"
+                      alt="Torneo Nacional de Tenis"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <span class="evento-categoria">TENIS</span>
+                      <h5 class="card-title">
+                        1° TORNEO NACIONAL DE TENIS PARA ABOGADOS Y MAGISTRADOS
+                      </h5>
+                      <p class="card-text">
+                        Torneo Nacional de Tenis que se realizará los días 24,
+                        25 y 26 de septiembre.
+                      </p>
+                      <div
+                        class="contenedor-botones d-flex justify-content-between"
+                      >
+                        <button class="btn-inscribirme">INSCRIBIRME</button>
+                        <button
+                          class="btn-informacion"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalEvento3"
+                        >
+                          INFORMACIÓN
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- EVENTO 4 -->
+            <div class="col-lg-6">
+              <div class="card evento-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/img/atletismo.jpg"
+                      class="img-fluid evento-img"
+                      alt="Torneo Provincial de Atletismo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <span class="evento-categoria">ATLETISMO</span>
+                      <h5 class="card-title">
+                        TORNEO PROVINCIAL DE ATLETISMO TAFÍ DEL VALLE
+                      </h5>
+                      <p class="card-text">
+                        Se realizará el sábado 24 de octubre en el Complejo
+                        Deportivo Democracia.
+                      </p>
+                      <div
+                        class="contenedor-botones d-flex justify-content-between"
+                      >
+                        <button class="btn-inscribirme">INSCRIBIRME</button>
+                        <button
+                          class="btn-informacion"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalEvento4"
+                        >
+                          INFORMACIÓN
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL EVENTO 1 -->
+      <div
+        class="modal fade"
+        id="modalEvento1"
+        tabindex="-1"
+        aria-labelledby="modalEvento1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalEvento1Label">
+                Detalles - Maratón La Gaceta
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <span class="mi-texto-destacado">Lugar de largada:</span> Parque
+                9 de Julio, San Miguel de Tucumán.
+              </p>
+              <p>
+                <span class="mi-texto-destacado">Horario:</span> Entrega de kits
+                desde las 07:30 hs.
+              </p>
+              <p>
+                <span class="mi-texto-destacado">Beneficios:</span> Sistema de
+                cronometraje oficial por chip, remera exclusiva y puestos de
+                hidratación.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL EVENTO 2 -->
+      <div
+        class="modal fade"
+        id="modalEvento2"
+        tabindex="-1"
+        aria-labelledby="modalEvento2Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalEvento2Label">
+                Detalles - Travesía al Viaducto
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <span class="mi-texto-destacado">Ubicación:</span> Tafí Viejo,
+                Tucumán.
+              </p>
+              <p>
+                <span class="mi-texto-destacado">Circuitos:</span> Senderos de
+                montaña técnicos, cruces de ríos y paso por el histórico
+                viaducto.
+              </p>
+              <p>
+                <span class="mi-texto-destacado"
+                  >Equipo obligatorio (24K):</span
+                >
+                Camello o mochila de hidratación, silbato de emergencia y manta
+                térmica.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL EVENTO 3 -->
+      <div
+        class="modal fade"
+        id="modalEvento3"
+        tabindex="-1"
+        aria-labelledby="modalEvento3Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalEvento3Label">
+                Detalles - Torneo de Tenis
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <span class="mi-texto-destacado">Categorías:</span> Singles y
+                Dobles organizados por ranking y rangos de edades.
+              </p>
+              <p>
+                <span class="mi-texto-destacado">Servicios:</span> Almuerzo de
+                bienvenida, pelotas oficiales del torneo y ceremonia de entrega
+                de premios.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL EVENTO 4 -->
+      <div
+        class="modal fade"
+        id="modalEvento4"
+        tabindex="-1"
+        aria-labelledby="modalEvento4Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalEvento4Label">
+                Detalles - Provincial de Atletismo
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <span class="mi-texto-destacado">Sede:</span> Complejo Deportivo
+                Democracia, Tafí del Valle.
+              </p>
+              <p>
+                <span class="mi-texto-destacado">Disciplinas:</span>
+                Competencias de velocidad, carreras de fondo, salto en largo y
+                lanzamiento.
+              </p>
+              <p>
+                <span class="mi-texto-destacado">Importante:</span> Es
+                obligatorio presentar el deslinde de responsabilidad firmado y
+                apto médico al acreditarse.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIN EVENTOS -->
+
+      <!-- INICIO PUBLICIDAD 1 -->
+
+      <!-- FIN PUBLICIDAD 2 -->
+    </main>
+    <footer class="footer">
+      <div class="contFooter">
+        <div class="footer-row">
+          <div class="footer-links">
+            <h4>Compañia</h4>
+            <ul>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Nuestros servicios</a></li>
+              <li><a href="#">Politica de privacidad</a></li>
+              <li><a href="#">Afiliate</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">Preguntas</a></li>
+              <li><a href="#">Compras</a></li>
+              <li><a href="#">Envios</a></li>
+              <li><a href="#">Pago</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tienda</h4>
+            <ul>
+              <li><a href="#">Ropa</a></li>
+              <li><a href="#">Zapatos</a></li>
+              <li><a href="#">Telefonos</a></li>
+              <li><a href="#">Pantallas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Siguenos</h4>
+            <div class="socialink">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
