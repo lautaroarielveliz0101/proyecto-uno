@@ -361,3 +361,18 @@ html, body {
   background-color: #146c43;
   color: #ffffff;
 }
+
+.card {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
