@@ -32,25 +32,17 @@ main {
   color: #ffffff;
 }
 
-.galeria {
+.publicidad {
     width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.imagen {
-    flex: 1;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* height: 350px; */
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-.imagen img {
+.publicidad img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    /* height: 350px; */
+    object-fit: fill;
     display: block;
 }
