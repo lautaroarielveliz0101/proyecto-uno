@@ -88,8 +88,9 @@ smain {
   object-position: center;
   background-color: #0c1a2e; /* Fondo oscuro elegante para bordes sobrantes */
   display: block;
-
 }
+
+
 
 /* Contenedor Flex para alinear las tarjetas a la par */
 .publicidades-contenedor {
