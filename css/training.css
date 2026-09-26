@@ -1,14 +1,17 @@
-.card {
+.carder {
     height: 100%;
-    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
+.carder:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
 
-.card-body .btn {
-    margin-top: auto;
+.carder .card-body {
+    padding: 20px;
 }
