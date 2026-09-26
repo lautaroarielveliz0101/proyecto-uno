@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
-body {
+main {
     margin: 0;
     background: #f5f7fc;
     color: #071b33;
     font-family: "DM Sans", sans-serif;
+    height: 100vh;
+    & section {
+        padding-top: 20px;
+    }
 }
 
 
@@ -173,6 +177,9 @@ body {
     margin: 15px 0 30px;
 }
 
+aside {
+    padding-top: 20px;
+}
 
 .grupo-filtro {
     margin-bottom: 30px;
@@ -677,4 +684,9 @@ body {
         align-self: flex-end;
     }
 
+}
+
+.titleIndumentaria h1 {
+    font-weight: 600;
+    font-size: bold;
 }
