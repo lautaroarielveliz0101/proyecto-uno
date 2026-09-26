@@ -79,3 +79,39 @@ a {
 #email:valid:not(:placeholder-shown) {
   border-color: #198754;
 }
+
+/* Tablets: hasta 992px */
+@media (max-width: 992px) {
+main {
+    background-color: white;
+}
+  .sectionLogin {
+    justify-content: center;
+  }
+
+  .sectionLogin .backLogin {
+    display: none;
+  }
+
+  .sectionLogin .columnLogin {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+  }
+}
+
+/* Celulares: hasta 576px */
+@media (max-width: 576px) {
+  .sectionLogin .columnLogin {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .sectionLogin .textLogin form,
+  .sectionLogin .textLogin form > button,
+  .sectionLogin .textLogin input,
+  .sectionLogin .googlebtn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
