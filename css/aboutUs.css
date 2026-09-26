@@ -77,7 +77,7 @@ main {
     & .card-group {
         width: 100%;
         display: flex;
-        gap: 20px;
+        gap: 10px;
         padding: 10px;
         & .card {
             border: none;
@@ -85,14 +85,19 @@ main {
             border-radius: 20px;
             padding: 15px;
             }
-            & .card:hover {
+            .card:hover {
+              transform: scale(1.05);
+              transition: ease 0.3s transform;
+              cursor: pointer;
+            }
+            /* & .card:hover {
                 border-radius:50%;
-                -webkit-border-radius:50%;
                 box-shadow: 0px 0px 15px 15px grey;
+                -webkit-border-radius:50%;
                 -webkit-box-shadow: 0px 0px 15px 15px grey;
                 transform: rotate(360deg);
                 -webkit-transform: rotate(360deg);
-            }
+            } */
             & h5 {
                  display: flex;
                  justify-content: center;
