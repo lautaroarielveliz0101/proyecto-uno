@@ -18,19 +18,23 @@ nav {
     & .upNavbar {
         width: 100%;
         height: 80px;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        grid-template-areas: "logo search login cart";
         align-items: center;
-        gap: clamp(16px, 4vw, 105px);
+        column-gap: clamp(12px, 2vw, 40px);
         padding: 0 20px;
         box-sizing: border-box;
         & img {
-        width: 130px;
-        flex-shrink: 0;
+            grid-area: logo;
+            width: 130px;
+            flex-shrink: 0;
     }
         & .search {
-            flex: 1;
+            grid-area: search;
+            width: 100%;
             max-width: 600px;
-            min-width: 0;
+            margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -50,10 +54,10 @@ nav {
             outline: rgb(190, 190, 190) solid 1px;
         }
         & .cart {
-            width: 35px;
+            grid-area: cart;
+            width: 45px;
             flex-shrink: 0;
             display: flex;
-            align-items: center;
             justify-content: center;
             & svg {
                 color: #ff722d;
@@ -67,10 +71,9 @@ nav {
             }
         }
         & .login {
+        grid-area: login;
         display: flex;
         gap: 10px;
-        margin-left: auto;
-        flex-shrink: 0;
     }
     }
     
@@ -83,10 +86,12 @@ nav {
         padding: 0 20px;
         box-sizing: border-box;
         & .menu {
+            padding-left: 20px;
             display: flex;
-            gap: 15px;
+            gap: 30px;
         }
         & .menu2 {
+            padding-right: 20px;
             display: flex;
             gap: 40px;
             & a {
@@ -175,7 +180,8 @@ nav .hamburger {
     nav .upNavbar .search {
         grid-area: search;
         width: 100%;
-        max-width: none;
+        max-width: 500px;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -269,6 +275,7 @@ nav .hamburger {
 .mobileMenu .register2:hover {
     background-color: #d14803;
 }
+
 
 /* FIN NAVBAR */
 

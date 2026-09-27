@@ -1,0 +1,117 @@
+.sectionLogin {
+    font-family: "DM Sans", sans-serif;
+    width: 100%;
+    display: flex;
+    & .backLogin {
+        width: 58%;
+        & img {
+            height: 100vh;
+        }
+    }
+    & .columnLogin {
+        width: 42%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & .logLogin > a > img {
+            width: 250px;
+            padding-bottom: 20px;
+        }
+        & .textLogin {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            & h2 {
+                font-weight: 500;
+            }
+            & form {
+                display: flex;
+                flex-direction: column;
+            }
+            & form > button {
+                width: 250px;
+            }
+            & input {
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                box-shadow: 1px 7px 12px -5px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 1px 7px 12px -5px rgba(0,0,0,0.75);
+                -moz-box-shadow: 1px 7px 12px -5px rgba(0,0,0,0.75);
+            }
+        }
+                    }
+}
+
+a {
+                text-decoration: none;
+                color: #696969;
+                font-size: small;
+            }
+
+.googlebtn {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.error-msg {
+  display: none;
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Mostrar el mensaje solo si el campo es inválido Y el usuario ya intentó enviar */
+#email:invalid:not(:focus):not(:placeholder-shown) ~ .error-msg {
+  display: block;
+}
+
+#email:invalid:not(:placeholder-shown) {
+  border-color: #dc3545;
+}
+
+#email:valid:not(:placeholder-shown) {
+  border-color: #198754;
+}
+
+/* Tablets: hasta 992px */
+@media (max-width: 992px) {
+main {
+    background-color: white;
+}
+  .sectionLogin {
+    justify-content: center;
+  }
+
+  .sectionLogin .backLogin {
+    display: none;
+  }
+
+  .sectionLogin .columnLogin {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+  }
+}
+
+/* Celulares: hasta 576px */
+@media (max-width: 576px) {
+  .sectionLogin .columnLogin {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .sectionLogin .textLogin form,
+  .sectionLogin .textLogin form > button,
+  .sectionLogin .textLogin input,
+  .sectionLogin .googlebtn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
