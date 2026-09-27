@@ -7,7 +7,7 @@ main {
     background: #f5f7fc;
     color: #071b33;
     font-family: "DM Sans", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     & section {
         padding-top: 20px;
     }
