@@ -1,3 +1,13 @@
+/* Reset global y prevención de scroll lateral */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Importación opcional de Bootstrap Icons si querés usar los íconos */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
@@ -141,6 +151,7 @@
 .cartel {
   position: relative;
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -150,6 +161,7 @@
 
 .cartel img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -157,9 +169,10 @@
 .cartel-contenido {
   position: absolute;
   left: 2rem; /* Se desplaza bien hacia la izquierda */
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 50%;
+  max-width: calc(50% - 2rem);
   z-index: 2;
 }
 
@@ -193,6 +206,8 @@
 @media (max-width: 768px) {
   .cartel-contenido {
     left: 1rem;
+    right: 1rem;
+    max-width: 80%;
   }
   .cartel-contenido h1 {
     font-size: 1.3rem;
@@ -346,4 +361,3 @@
   background-color: #146c43;
   color: #ffffff;
 }
-
