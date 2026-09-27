@@ -1,15 +1,591 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Deport AR</title>
-    <link href="../css/cart.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/assets/img/logoNewWhite.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/cart.css" />
+    <link rel="stylesheet" href="/css/product.css" />
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    <nav>
+      <div class="upNavbar">
+        <!-- NUEVO: botón hamburguesa (solo visible en celular/tablet) -->
+        <button
+          class="hamburger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-label="Abrir menú"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <!-- Fin de botón hamburguesa -->
 
+        <a href="/index.html">
+          <img src="/assets/img/logoNewWhite.jpg" alt="logo" />
+        </a>
+        <div class="search">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </span>
+          <input
+            type="text"
+            placeholder="   Buscar productos, cursos o eventos"
+          />
+        </div>
+        <div class="login">
+          <a href="/pages/login.html">
+            <button class="register1">Iniciar Sesión</button>
+          </a>
+          <a href="/pages/register.html">
+            <button class="register2">Crear Cuenta</button>
+          </a>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <div class="cart">
+          <a href="/pages/cart.html">
+            <button class="buttonCart">
+              <!-- <span>Carrito</span> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="downNavbar">
+        <div class="menu">
+          <a href="/index.html">
+            <button>INICIO</button>
+          </a>
+          <a href="/pages/category.html">
+            <button>CATEGORIAS</button>
+          </a>
+          <a href="/pages/product.html">
+            <button>EQUIPAMIENTO</button>
+          </a>
+          <a href="/pages/training.html">
+            <button>FORMACION</button>
+          </a>
+          <a href="/pages/events.html">
+            <button>EVENTOS</button>
+          </a>
+        </div>
+        <div class="menu2">
+          <a href="/pages/aboutUs.html">Nosotros</a>
+          <a href="/pages/contact.html">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NUEVO: menú lateral -->
+    <div
+      class="offcanvas offcanvas-start d-lg-none mobileMenu"
+      tabindex="-1"
+      id="mobileMenu"
+      aria-labelledby="mobileMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menú</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Cerrar"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <ul class="mobileLinks">
+          <li>
+            <a href="/pages/category.html"><button>CATEGORIAS</button></a>
+          </li>
+          <li>
+            <a href="/pages/product.html"><button>EQUIPAMIENTO</button></a>
+          </li>
+          <li>
+            <a href="/pages/training.html"><button>FORMACION</button></a>
+          </li>
+          <li>
+            <a href="/pages/events.html"><button>EVENTOS</button></a>
+          </li>
+        </ul>
+
+        <div class="mobileLogin">
+          <a href=""><button class="register1">Iniciar Sesión</button></a>
+          <a href=""><button class="register2">Crear Cuenta</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de menú lateral -->
+
+    <main>
+      <section class="sectionCart">
+        <div class="upCart">
+          <div class="detalleCart">
+            <div class="titleDetalleCart">
+              <h5>Productos</h5>
+            </div>
+
+            <div class="productsDetalleCart">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkDefault"
+                />
+              </div>
+              <div>
+                <img
+                  src="/assets/img/medias.webp"
+                  alt="zapatillas de voley asics"
+                />
+              </div>
+              <div class="detalleProducto">
+                <div class="detalleUp">
+                  <div>
+                    <p>Pack X3 Pares De Medias 3/4 Algodón Antideslizante</p>
+                  </div>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-trash3"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="detalleDown">
+                  <div class="cantDetalleDown">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dash"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"
+                        />
+                      </svg>
+                    </button>
+                    <span>1</span>
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-plus"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <span class="stock">+100 disponibles</span>
+                </div>
+              </div>
+              <div class="precio">
+                <span>$ 34.999</span>
+              </div>
+            </div>
+            <div class="productsDetalleCart">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkDefault"
+                />
+              </div>
+              <div>
+                <img
+                  src="/assets/img/asics.webp"
+                  alt="zapatillas de voley asics"
+                />
+              </div>
+              <div class="detalleProducto">
+                <div class="detalleUp">
+                  <div>
+                    <p>
+                      Zapatillas Asics Netburner Ballistic Ff 4 Hombre Voley
+                      Indor
+                    </p>
+                  </div>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-trash3"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="detalleDown">
+                  <div class="cantDetalleDown">
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dash"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"
+                        />
+                      </svg>
+                    </button>
+                    <span>1</span>
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-plus"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <span class="stock">+50 disponibles</span>
+                </div>
+              </div>
+              <div class="precio">
+                <span>$ 129.999</span>
+              </div>
+            </div>
+
+            <div class="footerDetalleCart">
+              <span class="envioFree">Envio Gratis!!!</span>
+              <div>
+                <span>Aprovechá tu envío gratis agregando más productos. </span
+                ><a href="/pages/product.html">Ver productos ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="resumenCart">
+            <div class="titleResumenCart">
+              <h5>Resumen de Compra</h5>
+            </div>
+            <div class="totalResumenCart">
+              <div class="lineResumen"><span>Productos</span><span>$ 164.998</span></div>
+              <div class="lineResumen"><span>Envio</span><span>Gratis</span></div>
+              <div class="cupon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-ticket-perforated"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 4.85v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9z"
+                  />
+                  <path
+                    d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3zM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9z"
+                  />
+                </svg>
+                <a href="/pages/error404.html">Ingresar código de cupón</a>
+              </div>
+              <hr>
+              <div class="lineTotal"><span>Total</span><span>$ 164.998</span></div>
+            </div>
+            <div class="btnContinuar">
+              <a href="/pages/error404.html">
+                <button type="button" class="btn btn-primary">Continuar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="downCart">
+          <div class="titleDownCart">
+            <h5>Recomendaciones para vos</h5>
+          </div>
+          <div class="row g-4">
+            <!-- ========================= -->
+            <!-- PRODUCTO 1 -->
+            <!-- ========================= -->
+
+            <div class="col-md-6 col-xl-3">
+              <article class="producto-card">
+                <div class="imagen-producto">
+                  <img
+                    src="../assets/img/campera puma.webp"
+                    alt="Camiseta deportiva"
+                  />
+
+                  <span class="badge-producto"> NUEVA TEMPORADA </span>
+                </div>
+
+                <div class="producto-info">
+                  <span class="marca"> SPORTAR PERFORMANCE · TEXTIL </span>
+
+                  <h2>Campera Puma Run Hombre</h2>
+
+                  <div class="talles-producto">
+                    <strong>TALLES:</strong>
+
+                    <a href="/pages/error404.html">
+                      <span>S</span>
+                    </a>
+
+                    <a href="/pages/error404.html">
+                      <span>M</span>
+                    </a>
+
+                    <a href="/pages/error404.html">
+                      <span>L</span>
+                    </a>
+
+                    <a href="/pages/error404.html">
+                      <span>XL</span>
+                    </a>
+                  </div>
+
+                  <hr />
+
+                  <div class="precio-producto">$34.900 ARS</div>
+
+                  <div class="cuotas">6 cuotas fijas de $5.816</div>
+                  <a href="/pages/cart.html">
+                    <button class="agregar">🛒 AÑADIR AL CARRITO</button>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- ========================= -->
+            <!-- PRODUCTO 2 -->
+            <!-- ========================= -->
+
+            <div class="col-md-6 col-xl-3">
+              <article class="producto-card">
+                <div class="imagen-producto">
+                  <img
+                    src="../assets/img/short hov.jpg"
+                    alt="Calza deportiva"
+                  />
+
+                  <span class="badge-producto azul"> MÁS VENDIDO </span>
+                </div>
+
+                <div class="producto-info">
+                  <span class="marca"> PUMA TRAIN · RUNNING </span>
+
+                  <h2>Short Hombre Puma Velocity 5</h2>
+
+                  <div class="talles-producto">
+                    <strong>TALLES:</strong>
+
+                    <a href="/pages/error404.html">
+                      <span>L</span>
+                    </a>
+
+                    <a href="/pages/error404.html">
+                      <span>XL</span>
+                    </a>
+
+                    <a href="/pages/error404.html">
+                      <span>XXL</span>
+                    </a>
+                  </div>
+
+                  <hr />
+
+                  <div class="precio-producto">$20.000 ARS</div>
+
+                  <div class="cuotas">6 cuotas fijas de $3.333</div>
+                  <a href="/pages/cart.html">
+                    <button class="agregar">AÑADIR AL CARRITO</button>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- ========================= -->
+            <!-- PRODUCTO 3 -->
+            <!-- ========================= -->
+
+            <div class="col-md-6 col-xl-3">
+              <article class="producto-card">
+                <div class="imagen-producto">
+                  <img
+                    src="../assets/img/visera.webp"
+                    alt="Pollera deportiva"
+                  />
+
+                  <span class="badge-producto verde">
+                    TECNOLOGÍA DRY-TECH
+                  </span>
+                </div>
+
+                <div class="producto-info">
+                  <span class="marca"> SPORTAR MATCH · RUNNING </span>
+
+                  <h2>Visera de running Everyday Puma</h2>
+
+                  <div class="talles-producto">
+                    <strong>TALLES:</strong>
+
+                    <a href="/pages/error404.html">
+                      <span>40</span>
+                    </a>
+
+                    <a href="/pages/error404.html">
+                      <span>42</span>
+                    </a>
+
+                    <a href="/pages/error404.html">
+                      <span>43</span>
+                    </a>
+
+                    <a href="/pages/error404.html">
+                      <span>44</span>
+                    </a>
+                  </div>
+
+                  <hr />
+
+                  <div class="precio-producto">$29.800 ARS</div>
+
+                  <div class="cuotas">6 cuotas fijas de $4.966</div>
+                  <a href="/pages/cart.html">
+                    <button class="agregar">🛒 AÑADIR AL CARRITO</button>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- ========================= -->
+            <!-- PRODUCTO 4 -->
+            <!-- ========================= -->
+
+            <div class="col-md-6 col-xl-3">
+              <article class="producto-card">
+                <div class="imagen-producto">
+                  <img
+                    src="../assets/img/zapa clavo.jpg"
+                    alt="Campera deportiva"
+                  />
+
+                  <span class="badge-producto negra"> ¡ÚLTIMA UNIDAD! </span>
+                </div>
+
+                <div class="producto-info">
+                  <span class="marca"> SPORTAR STORM · OUTDOOR TRAINING </span>
+
+                  <h2>Zapatillas de Atletismo Puma Evospeed</h2>
+
+                  <div class="talles-producto">
+                    <strong>TALLES:</strong>
+
+                    <a href="/pages/error404.html">
+                      <span>38.5</span>
+                    </a>
+                  </div>
+
+                  <hr />
+
+                  <div class="precio-producto">$68.000 ARS</div>
+
+                  <div class="cuotas">6 cuotas fijas de $11.333</div>
+                  <a href="/pages/cart.html">
+                    <button class="agregar">🛒 AÑADIR AL CARRITO</button>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
