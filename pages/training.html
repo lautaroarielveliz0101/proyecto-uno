@@ -25,7 +25,7 @@
           aria-label="Abrir menú"
         >
           <svg
-            xmlns="http://www.w3.org/2000/sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK"
+            xmlns="http://www.w3.org/2000/svg"
             width="26"
             height="26"
             fill="currentColor"
@@ -39,7 +39,7 @@
         <!-- Fin de botón hamburguesa -->
 
         <a href="/index.html">
-          <img src="/assets/img/logoNewWhite.jpg" alt="logo">
+          <img src="./assets/img/logoNewWhite.jpg" alt="logo" />
         </a>
         <div class="search">
           <span>
@@ -61,10 +61,19 @@
             placeholder="   Buscar productos, cursos o eventos"
           />
         </div>
+        <div class="login">
+          <a href="/pages/login.html">
+            <button class="register1">Iniciar Sesión</button>
+          </a>
+          <a href="/pages/register.html">
+            <button class="register2">Crear Cuenta</button>
+          </a>
+        </div>
+
         <div class="cart">
           <a href="/pages/cart.html">
             <button class="buttonCart">
-              <span>Carrito</span>
+              <!-- <span>Carrito</span> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -78,14 +87,6 @@
                 />
               </svg>
             </button>
-          </a>
-        </div>
-        <div class="login">
-          <a href="/pages/login.html">
-            <button class="register1">Iniciar Sesión</button>
-          </a>
-          <a href="/pages/register.html">
-            <button class="register2">Crear Cuenta</button>
           </a>
         </div>
       </div>
@@ -138,7 +139,7 @@
 </div>
 
      <div class="Form">
-    <h1>Cursos destados
+    <h1>Cursos destacados
     </h1>
 
 
@@ -178,7 +179,7 @@
                         </li>
                     </ul>
 
-                    <a href="#" class="btn-curso">VER CURSO</a>
+                    <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
                 </div>
             </div>
         </div>
@@ -199,7 +200,7 @@
                     <div class="curso-rating">
                         <span class="estrella">★</span>
                         <strong>4.8</strong>
-                        <span class="reseñas">(95 reseñas)</span>
+                        <span class="reseñas">(70 reseñas)</span>
                     </div>
 
                     <h5 class="curso-titulo">Certificación Superior en Entrenamiento Táctico y Metodología en Hockey</h5>
@@ -213,7 +214,7 @@
                         </li>
                     </ul>
 
-                    <a href="#" class="btn-curso">VER CURSO</a>
+                    <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
                 </div>
             </div>
         </div>
@@ -250,7 +251,7 @@
                         </li>
                     </ul>
 
-                    <a href="#" class="btn-curso">VER CURSO</a>
+                    <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
                 </div>
 
                 
@@ -272,10 +273,10 @@
                     <div class="curso-rating">
                         <span class="estrella">★</span>
                         <strong>4.6</strong>
-                        <span class="reseñas">(95 reseñas)</span>
+                        <span class="reseñas">(75 reseñas)</span>
                     </div>
 
-                    <h5 class="curso-titulo">Pedagogía y Formación Técnica en Etapas Infantiles</h5>
+                    <h5 class="curso-titulo">Pedagogía profesional y Formación Técnica en Etapas Infantiles</h5>
 
                     <ul class="curso-info">
                         <li>
@@ -286,7 +287,7 @@
                         </li>
                     </ul>
 
-                    <a href="#" class="btn-curso">VER CURSO</a>
+                    <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
                 </div>
             </div>
         </div>
@@ -294,6 +295,18 @@
         
 
     </div>
+</div>
+
+<div class="cursos-header">
+  <h1 class="cursos-title">Cursos destacados</h1>
+  
+  <a href="/pages/error404.html" class="btn-cursos">
+    <span>Ver todos los cursos disponibles</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+      <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+  </a>
 </div>
 
 <section class="banner-container">
@@ -326,32 +339,108 @@
 
     <!-- Botón de Acción y Promoción -->
     <div class="banner-action">
-      <a href="#" class="btn-primary">Ver Cursos Disponibles</a>
+      <a href="/pages/error404.html" class="btn-primary">Ver Cursos Disponibles</a>
       <span class="price-tag">Certificación oficial al finalizar</span>
     </div>
   </div>
 
   <!-- Columna Derecha: Galería / Bento Grid -->
   <div class="banner-gallery">
-    <!-- Tarjeta 1: Pizarra táctica / Campo de juego -->
+    <!-- Tarjeta 1: Pizarra / Planificación Táctica en Fútbol -->
     <div class="card card-tall">
-      <img src="/assets/img/atletismo2.jpg" alt="Tecnico en pizarra">
+      <img src="/assets/img/ninoentrenando.jfif" alt="Planificación táctica de fútbol">
     </div>
 
-    <!-- Tarjeta 2: Entrenador o Director Técnico -->
+    <!-- Tarjeta 2: Entrenador / Director Técnico en Cancha -->
     <div class="card card-person">
-      <img src="/assets/img/ninoentrenando.jfif" alt="Director Técnico">
+      <img src="/assets/img/jockeyninas.jpg" alt="Director Técnico dirigiendo partido">
     </div>
 
-    <!-- Tarjeta 3: Software / Laptop / Calzado -->
+    <!-- Tarjeta 3: Equipamiento de Hockey / Entrenamiento -->
     <div class="card card-small-top">
-      <img src="assets/img/Zapatillapubli.jfif" alt="Equipamiento Deportivo">
+      <img src="/assets/img/tecnicopiza.jfif" alt="Jugadora de Hockey con palo y bocha">
     </div>
 
-    <!-- Tarjeta 4: Videoanalista trabajando -->
+    <!-- Tarjeta 4: Videoanálisis / Trabajo con Laptop -->
     <div class="card card-small-bottom">
-      <img src="assets/img/marcelito.jfif" alt="Análisis de Video">
+      <img src="/assets/img/campera puma hov.webp" alt="Análisis de rendimiento deportivo">
     </div>
+  </div>
+</section>
+
+<section class="certificaciones-section">
+  <!-- Encabezado de la Sección -->
+  <div class="certificaciones-header">
+    <h2>Obtené tu Certificación</h2>
+    <p>Completá cursos, superá las evaluaciones oficiales y construí tu perfil profesional verificado dentro del ecosistema SportAr con validación criptográfica y código QR único.</p>
+  </div>
+
+  <!-- Grilla de Tarjetas -->
+  <div class="certificaciones-grid">
+    
+    <!-- Tarjeta 1 -->
+    <div class="certi-card">
+      <div class="certi-card-top">
+        <div class="certi-icon">
+          <!-- Icono Medal / Badge -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00567a" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        </div>
+        <span class="certi-sub">SPORTAR ACADEMY</span>
+        <h3 class="certi-title">Diploma Oficial</h3>
+        <span class="certi-badge badge-blue">NIVEL ATLETA PRO</span>
+      </div>
+      <div class="certi-card-body">
+        <h4>Certificado de Técnica Individual y Biomecánica</h4>
+        <p>Acredita dominio de fundamentos, gestos con el palo en velocidad y ejecución sin balance comprometido.</p>
+      </div>
+      <div class="certi-card-footer">
+        <span>Evaluación 100% online</span>
+        <strong>Carga: 30 hs</strong>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="certi-card">
+      <div class="certi-card-top">
+        <div class="certi-icon">
+          <!-- Icono Check Badge -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00567a" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <span class="certi-sub">SPORTAR ACADEMY</span>
+        <h3 class="certi-title">Diploma Oficial</h3>
+        <span class="certi-badge badge-blue">NIVEL COACH NACIONAL</span>
+      </div>
+      <div class="certi-card-body">
+        <h4>Certificado de Planificación Deportiva para Entrenadores</h4>
+        <p>Acredita capacidades metodológicas para el armado de pretemporada, mesociclos y gestión táctica.</p>
+      </div>
+      <div class="certi-card-footer">
+        <span>Tesina y proyecto aplicado</span>
+        <strong>Carga: 60 hs</strong>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="certi-card">
+      <div class="certi-card-top">
+        <div class="certi-icon">
+          <!-- Icono Mazo / Arbitraje -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c05621" stroke-width="2"><path d="m13 2 9 9-4 4-9-9z"/><path d="M10 5 2 13l4 4 8-8"/><path d="m15 9 2 2"/></svg>
+        </div>
+        <span class="certi-sub">SPORTAR ACADEMY</span>
+        <h3 class="certi-title">Diploma Oficial</h3>
+        <span class="certi-badge badge-orange">ESTÁNDAR FIH</span>
+      </div>
+      <div class="certi-card-body">
+        <h4>Certificación Oficial de Reglamento y Arbitraje de Campo</h4>
+        <p>Validación de criterio, gestualidad reglamentaria y aptitud para dirección de partidos competitivos.</p>
+      </div>
+      <div class="certi-card-footer">
+        <span>Examen teórico y video-test</span>
+        <strong>Carga: 45 hs</strong>
+      </div>
+    </div>
+
   </div>
 </section>
   
@@ -376,7 +465,7 @@
           <p class="texto-card-gratuita">
             Estrategias pedagógicas, desarrollo motriz y herramientas prácticas para la enseñanza en etapas formativas.
           </p>
-          <a href="#" class="btn-gratuito">Acceder Gratis</a>
+          <a href="/pages/error404.html" class="btn-gratuito">Acceder Gratis</a>
         </div>
       </div>
 
@@ -391,7 +480,7 @@
           <p class="texto-card-gratuita">
             Fundamentos básicos para el análisis táctico, corte de video y seguimiento de rendimiento deportivo.
           </p>
-          <a href="#" class="btn-gratuito">Acceder Gratis</a>
+          <a href="/pages/error404.html" class="btn-gratuito">Acceder Gratis</a>
         </div>
       </div>
 
@@ -406,7 +495,7 @@
           <p class="texto-card-gratuita">
             Conceptos clave sobre la organización del cuerpo técnico y la comunicación efectiva con el plantel.
           </p>
-          <a href="#" class="btn-gratuito">Acceder Gratis</a>
+          <a href="/pages/error404.html" class="btn-gratuito">Acceder Gratis</a>
         </div>
       </div>
 
@@ -415,88 +504,80 @@
 </section>
 
 <section class="container my-5">
-  <!-- Título opcional para la sección -->
   <h2 class="text-center mb-4 fw-bold">Preguntas Frecuentes</h2>
 
-  <!-- Contenedor centrado con ancho máximo (col-md-8 o col-lg-7) -->
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-8 col-lg-7">
-      
-      <div class="accordion accordion-flush shadow-sm rounded p-3 bg-dark text-white" id="accordionFlushExample">
-        
-        <!-- Pregunta 1 -->
-        <div class="accordion-item bg-transparent text-white">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              ¿Qué requisitos necesito para realizar los cursos de Dirección Técnica o Videoanálisis?
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-light">
-              No necesitas experiencia previa ni titulaciones previas. Todos nuestros cursos inician desde los conceptos fundamentales y van avanzando de manera progresiva hacia herramientas de nivel profesional.
-            </div>
-          </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    
+    <!-- Pregunta 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          ¿Qué requisitos necesito para realizar los cursos de Dirección Técnica o Videoanálisis?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          No necesitas experiencia previa ni titulaciones anteriores. Todos nuestros cursos inician desde los conceptos fundamentales y van avanzando de manera progresiva hacia el dominio de herramientas de nivel profesional.
         </div>
-
-        <!-- Pregunta 2 -->
-        <div class="accordion-item bg-transparent text-white">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              ¿Las clases son en vivo o grabadas?
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-light">
-              Contamos con una modalidad 100% flexible. Las clases teóricas y los módulos prácticos están grabados en alta definición para que estudies a tu ritmo, junto con sesiones semanales de tutoría en vivo para resolver dudas.
-            </div>
-          </div>
-        </div>
-
-        <!-- Pregunta 3 -->
-        <div class="accordion-item bg-transparent text-white">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              ¿Qué software de videoanálisis aprenderé a utilizar?
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-light">
-              Trabajamos con los programas estándar de la industria como LongoMatch, NACSport y Kinovea, enseñándote a realizar cortes de partido, etiquetado de jugadas e informes tácticos.
-            </div>
-          </div>
-        </div>
-
-        <!-- Pregunta 4 -->
-        <div class="accordion-item bg-transparent text-white">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-              ¿Entregan certificación oficial al finalizar los cursos?
-            </button>
-          </h2>
-          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-light">
-              Sí, al aprobar el proyecto práctico final del curso recibirás una certificación digital descargable que valida tus competencias en metodología táctica y análisis de rendimiento.
-            </div>
-          </div>
-        </div>
-
-        <!-- Pregunta 5 -->
-        <div class="accordion-item bg-transparent text-white">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-              ¿Cuáles son los medios de pago disponibles?
-            </button>
-          </h2>
-          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-light">
-              Aceptamos tarjetas de crédito, débito, transferencias bancarias y plataformas de pago internacionales. También ofrecemos planes de cuotas sin interés según tu país.
-            </div>
-          </div>
-        </div>
-
       </div>
-
     </div>
+
+    <!-- Pregunta 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          ¿Las clases son en vivo o grabadas?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Contamos con una modalidad 100% flexible. Las clases teóricas y los módulos prácticos están grabados en alta definición para que estudies a tu ritmo, junto con sesiones semanales de tutoría en vivo para resolver dudas.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          ¿Qué software de videoanálisis aprenderé a utilizar?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Trabajamos con los programas estándar de la industria como LongoMatch, NACSport y Kinovea, enseñándote a realizar cortes de partido, etiquetado de jugadas e informes tácticos.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          ¿Entregan certificación oficial al finalizar los cursos?
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Sí, al aprobar el proyecto práctico final del curso recibirás una certificación digital descargable que valida tus competencias en metodología táctica y análisis de rendimiento.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          ¿Cuáles son los medios de pago disponibles?
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Aceptamos tarjetas de crédito, débito, transferencias bancarias y plataformas de pago internacionales. También ofrecemos planes de cuotas sin interés según tu país.
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 

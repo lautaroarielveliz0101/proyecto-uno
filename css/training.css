@@ -345,7 +345,7 @@ html, body {
 }
 
 .btn-gratuito {
-  background-color: #198754;
+  background-color: #00567a;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -358,7 +358,7 @@ html, body {
 }
 
 .btn-gratuito:hover {
-  background-color: #146c43;
+  background-color: #003d57;
   color: #ffffff;
 }
 
@@ -713,67 +713,153 @@ html, body {
 }
 
 /* --- BANNER CONTENEDOR PRINCIPAL --- */
+
+/* --- BANNER PRINCIPAL CON BENTO GRID Y AZUL CORPORATIVO --- */
+
 .banner-container {
-  background-color: #1a1c29; /* Color de fondo oscuro */
-  color: #ffffff;
-  border-radius: 20px;
-  padding: 40px;
-  display: flex;
-  gap: 40px;
-  align-items: center;
+  width: 100%;
   max-width: 1200px;
-  margin: 20px auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px auto;
+  padding: 2.5rem;
+  background-color: #1a1c29;
+  border: 1px solid #2a2d3d;
+  border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
 }
 
-/* --- COLUMNA IZQUIERDA --- */
-.banner-info {
-  flex: 1.2;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Responsivo para celulares y tablets */
+@media (max-width: 992px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
 }
+
+/* --- COLUMNA IZQUIERDA: TEXTOS Y BENEFICIOS --- */
 
 .banner-title {
+  color: #ffffff;
   font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1rem;
 }
 
 .banner-description {
   color: #a0a5b5;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
-/* Grilla de ítems / características tácticas */
+/* Grilla de 2 columnas para los ítems/beneficios */
 .banner-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-top: 10px;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .feature-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 0.85rem;
+  gap: 0.6rem;
   color: #e0e0e0;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .feature-icon {
-  background-color: #2a2d3d;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+/* Acciones y Botón Azul */
+.banner-action {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.banner-action .btn-primary {
+  background-color: #00567a !important; /* Azul base asignado */
+  color: #ffffff !important;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none !important;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.banner-action .btn-primary:hover {
+  background-color: #003d57 !important; /* Azul hover asignado */
+  transform: translateY(-2px);
+}
+
+.price-tag {
+  color: #a0a5b5;
+  font-size: 0.85rem;
+}
+
+/* --- COLUMNA DERECHA: BENTO GRID DE IMÁGENES --- */
+
+.banner-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 180px); /* Altura controlada para las tarjetas */
+  gap: 1rem;
+}
+
+/* Corrección fundamental: evita que las imágenes se rompan */
+.banner-gallery .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px !important;
+  overflow: hidden !important; /* Corta la imagen sobrante */
+  border: none !important;
+  background-color: #12141d;
+  margin: 0 !important;
+}
+
+.banner-gallery .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important; /* Adapta la imagen al cuadro sin deformar */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Sutil efecto de zoom en las fotos sin cambiar de color */
+.banner-gallery .card:hover img {
+  transform: scale(1.05);
+}
+
+/* Distribución Bento Grid */
+.banner-gallery .card-tall {
+  grid-column: 1;
+  grid-row: 1 / span 2; /* Ocupa 2 filas horizontales */
+}
+
+.banner-gallery .card-person {
+  grid-column: 2;
+  grid-row: 1 / span 2; /* Ocupa 2 filas horizontales */
+}
+
+.banner-gallery .card-small-top {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.banner-gallery .card-small-bottom {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 /* Botón y Certificación (Estilo Táctico/Deportivo) */
@@ -786,7 +872,7 @@ html, body {
 }
 
 .btn-primary {
-  background-color: #00e676; /* Verde táctico / deportivo */
+  background-color: #003d57; /* Verde táctico / deportivo */ 
   color: #0d1b2a;
   padding: 12px 28px;
   border-radius: 8px;
@@ -798,7 +884,7 @@ html, body {
 }
 
 .btn-primary:hover {
-  background-color: #00c853;
+  background-color: #00567a;
   transform: translateY(-2px);
 }
 
@@ -817,78 +903,179 @@ html, body {
   width: 100%;
 }
 
-.card {
-  border-radius: 16px;
-  overflow: hidden;
-  background-color: #2a2d3d;
-  transition: transform 0.2s ease;
-}
+/* --- SECCIÓN CERTIFICACIONES Y TITULACIONES (ESTILO IMAGEN 2) --- */
 
-.card:hover {
-  transform: scale(1.02);
-}
-
-.card img {
+.certificaciones-section {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 15px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
-/* Posicionamiento específico del Grid */
-.card-tall {
-  grid-column: 1;
-  grid-row: 1 / 3; /* Ocupa las 2 filas de la izquierda */
+/* Header */
+.certificaciones-header {
+  margin-bottom: 30px;
+  text-align: left;
 }
 
-.card-person {
-  grid-column: 2;
-  grid-row: 1 / 3; /* Ocupa las 2 filas del centro */
+.certificaciones-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
 }
 
-.card-small-top {
-  grid-column: 3;
-  grid-row: 1; /* Fila superior derecha */
-  background-color: #1e293b;
+.certificaciones-header p {
+  font-size: 1rem;
+  color: #475569;
+  max-width: 900px;
+  line-height: 1.5;
 }
 
-.card-small-bottom {
-  grid-column: 3;
-  grid-row: 2; /* Fila inferior derecha */
-  background-color: #10172a;
+/* Grilla */
+.certificaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-/* --- ADAPTABILIDAD PARA MÓVILES (RESPONSIVE) --- */
-@media (max-width: 900px) {
-  .banner-container {
-    flex-direction: column;
-    padding: 25px;
-  }
-
-  .banner-features {
+@media (max-width: 992px) {
+  .certificaciones-grid {
     grid-template-columns: 1fr;
   }
-
-  .banner-gallery {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
-
-  .card-tall, .card-person {
-    grid-row: auto;
-  }
 }
 
-/* --- SECCIÓN PREGUNTAS FRECUENTES --- */
-.accordion {
+/* Tarjeta principal */
+.certi-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Bloque Superior de la Tarjeta */
+.certi-card-top {
+  background-color: #f0f5ff; /* Azul pastel claro */
   border-radius: 16px;
-  background-color: #1a1c29 !important; /* Fondo oscuro acorde al banner */
-  border: 1px solid #2a2d3d;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 24px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Ítems individuales y bordes divisores */
+/* Icono central circular */
+.certi-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.certi-sub {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #64748b;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.certi-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+
+/* Insignias / Badges */
+.certi-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge-blue {
+  background-color: #dbeafe;
+  color: #00567a;
+}
+
+.badge-orange {
+  background-color: #ffedd5;
+  color: #c05621;
+}
+
+/* Cuerpo de la Tarjeta */
+.certi-card-body {
+  padding: 20px 8px 15px 8px;
+}
+
+.certi-card-body h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.certi-card-body p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Footer de la Tarjeta */
+.certi-card-footer {
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+}
+
+.certi-card-footer span {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.certi-card-footer strong {
+  color: #00567a; /* Color azul corporativo definido previa/en banner */
+  font-weight: 700;
+}
+
+/* --- ACORDEÓN CON EFECTO HOVER Y MÁXIMO ANCHO (1200PX) --- */
+
+/* Contenedor principal */
+.accordion {
+  width: 100% !important;
+  max-width: 1200px !important; /* Mismo ancho que el banner principal */
+  margin: 20px auto !important;
+  border-radius: 16px !important;
+  background-color: #1a1c29 !important;
+  border: 1px solid #2a2d3d !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+  overflow: hidden;
+}
+
+/* Ítems del acordeón */
 .accordion-item {
+  background-color: transparent !important;
   border-bottom: 1px solid #2a2d3d !important;
 }
 
@@ -896,35 +1083,37 @@ html, body {
   border-bottom: none !important;
 }
 
-/* Botón del acordeón (pregunta) */
+/* Botón del acordeón (estado normal) */
 .accordion-button {
   font-weight: 600;
   font-size: 1rem;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem !important;
   color: #ffffff !important;
   background-color: transparent !important;
   box-shadow: none !important;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
+/* EFECTO HOVER: Cambia a verde táctico al pasar el cursor */
 .accordion-button:hover {
-  color: #00e676 !important; /* Verde táctico al pasar el cursor */
+  color: #00e676 !important;
 }
 
-/* Estado activo / abierto */
+/* Estado abierto / desplegado */
 .accordion-button:not(.collapsed) {
   color: #00e676 !important;
   background-color: rgba(0, 230, 118, 0.05) !important;
 }
 
-/* Cambiar el color del ícono de la flecha (flecha blanca / verde) */
+/* Flecha desplegable en blanco por defecto */
 .accordion-button::after {
-  filter: invert(1) grayscale(100%) brightness(200%); /* Cambia la flecha negra por blanca */
+  filter: invert(1) brightness(200%);
   transition: transform 0.3s ease, filter 0.2s ease;
 }
 
-.accordion-button:not(.collapsed)::after {
-  /* Al desplegar, resalta la flecha en color verde táctico */
+/* Flecha verde táctico al estar abierto o al hacer hover */
+.accordion-button:not(.collapsed)::after,
+.accordion-button:hover::after {
   filter: invert(53%) sepia(93%) saturate(1455%) hue-rotate(106deg) brightness(101%) contrast(106%);
 }
 
@@ -934,4 +1123,227 @@ html, body {
   font-size: 0.95rem;
   line-height: 1.6;
   padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+
+.footer{
+  margin-top: 40px;
+  background-color: #24262b;
+  padding: 80px 0;
+
+}
+
+.contFooter{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-links{
+  width: 25%;
+  padding: 0 15px;
+
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  display: inline-block;
+}
+
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+  color: #ffffff;
+  padding-left: 6px;
+
+}
+
+.socialink a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(225, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+
+.socialink a:hover{
+    background-color: #00c3ff;
+}
+
+@media(max-width: 991px){
+  .footer-row{
+    text-align: center;
+  }
+  .footer-links{
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+
+}
+
+/* --- ENCABEZADO DE CURSOS DESTACADOS CON BOTÓN A LA DERECHA --- */
+
+.cursos-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 20px auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between; /* Alinea título a la izquierda y botón a la derecha */
+  align-items: center;
+  flex-wrap: wrap; /* Para adaptarse en celulares */
+  gap: 15px;
+}
+
+/* Título */
+.cursos-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Botón Rectangular con Border-Radius y Flecha */
+.btn-cursos {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #00567a; /* Color azul corporativo */
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px; /* Bordes redondeados sobrios */
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid #00567a;
+  transition: background-color 0.25s ease, transform 0.2s ease, border-color 0.25s ease;
+}
+
+.btn-cursos:hover {
+  background-color: #003d57; /* Color hover azul oscuro */
+  border-color: #003d57;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Animación sutil de la flecha al hacer hover */
+.btn-cursos svg {
+  transition: transform 0.2s ease;
+}
+
+.btn-cursos:hover svg {
+  transform: translateX(4px); /* Desplaza suavemente la flecha a la derecha */
+}
+
+/* --- SECCIÓN CERTIFICACIONES Y DIPLOMAS (CON IMÁGENES Y SIN BOTÓN) --- */
+
+/* Contenedor principal de la tarjeta */
+.card {
+  background-color: #1a1c29 !important; /* Mismo fondo oscuro */
+  border: 1px solid #2a2d3d !important;
+  border-radius: 16px !important;
+  overflow: hidden; /* Mantiene la imagen recortada dentro del borde redondeado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efecto hover sobre la tarjeta */
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #00e676 !important; /* Borde verde táctico */
+  box-shadow: 0 12px 30px rgba(0, 230, 118, 0.15) !important;
+}
+
+/* Contenedor e imagen superior */
+.card-img-wrapper {
+  width: 100%;
+  height: 180px; /* Altura fija para que todas las imágenes queden uniformes */
+  overflow: hidden;
+  background-color: #12141d;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  transition: transform 0.4s ease;
+}
+
+/* Efecto de zoom leve en la imagen al hacer hover sobre la tarjeta */
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+/* Título de la tarjeta */
+.card-title {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+/* Texto de la tarjeta */
+.card-text {
+  color: #a0a5b5 !important;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* --- ESTILO DE ENCABEZADO Y TEXTO (IMAGEN DE REFERENCIA) --- */
+
+.Form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding: 0 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Título principal: tipografía pesada, tono oscuro y tipografía limpia */
+.Form h1 {
+  color: #0b132a; /* Azul noche muy oscuro/casi negro */
+  font-size: 2.25rem; /* ~36px */
+  font-weight: 800; /* Extra bold */
+  letter-spacing: -0.02em; /* Compresión ligera del espaciado como en la foto */
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+}
+
+/* Subtítulo / Descripción */
+.Form p {
+  color: #4b5563; /* Gris intermedio para contraste suave */
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0;
 }
