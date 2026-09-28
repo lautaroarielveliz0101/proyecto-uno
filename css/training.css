@@ -1,0 +1,1349 @@
+/* Reset global y prevención de scroll lateral */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Importación opcional de Bootstrap Icons si querés usar los íconos */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.curso-card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen y Badges */
+.curso-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.curso-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-populared {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #c43e00; /* Naranja rojizo */
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+}
+
+.badge-categoria {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background: rgba(33, 43, 54, 0.85); /* Oscuro translúcido */
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Cuerpo de la tarjeta */
+.curso-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.curso-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.curso-rating .estrella {
+  color: #d96b00; /* Naranja/Dorado estrella */
+  font-size: 1.1rem;
+}
+
+.curso-rating strong {
+  color: #1a1a1a;
+  font-size: 1.05rem;
+}
+
+.curso-rating .reseñas {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.curso-titulo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+/* Detalles (módulos y coach) */
+.curso-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  color: #4b5563;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.curso-info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botón VER CURSO */
+.btn-curso {
+  margin-top: auto;
+  background-color: #00567a; /* Azul petróleo */
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 12px 20px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+  display: block;
+}
+
+.btn-curso:hover {
+  background-color: #003d57;
+  color: #ffffff;
+}
+
+.cartel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif; /* Tipografía recomendada */
+}
+
+.cartel img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cartel-contenido {
+  position: absolute;
+  left: 2rem; /* Se desplaza bien hacia la izquierda */
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: calc(50% - 2rem);
+  z-index: 2;
+}
+
+.cartel-contenido h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111111;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0 0 0.8rem 0;
+  letter-spacing: -0.5px;
+}
+
+/* Efecto para que la primera letra quede más grande */
+.cartel-contenido .letra-grande {
+  font-size: 3.2rem; /* Tamaño mayor para la primera letra */
+  font-weight: 900;
+  color: #000000;
+  vertical-align: baseline;
+}
+
+.cartel-contenido p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #555555;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .cartel-contenido {
+    left: 1rem;
+    right: 1rem;
+    max-width: 80%;
+  }
+  .cartel-contenido h1 {
+    font-size: 1.3rem;
+  }
+  .cartel-contenido .letra-grande {
+    font-size: 1.8rem;
+  }
+  .cartel-contenido p {
+    font-size: 0.75rem;
+  }
+}
+
+.seccion-encabezado {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2.5rem 0;
+}
+
+.subtitulo {
+  color: #ff5522;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.badge {
+  background-color: #ffebe5;
+  color: #ff5522;
+  padding: 0.2rem 0.65rem;
+  border-radius: 50px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.titulo-principal {
+  color: #2c3038;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+  .subtitulo {
+    font-size: 0.75rem;
+  }
+  .titulo-principal {
+    font-size: 1.6rem;
+  }
+}
+
+/* Estilos para la sección de Cursos Gratuitos */
+.seccion-gratuitos {
+  padding: 3rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subtitulo-gratuitos {
+  color: #198754; /* Verde institucional/gratuito */
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.4rem;
+}
+
+.titulo-gratuitos {
+  color: #111827;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.card-gratuita {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-gratuita:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.badges-gratuita {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.badge-gratis {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.badge-modalidad {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.titulo-card-gratuita {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.texto-card-gratuita {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.btn-gratuito {
+  background-color: #00567a;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 10px 18px;
+  border-radius: 50px;
+  transition: background-color 0.2s ease;
+  display: block;
+}
+
+.btn-gratuito:hover {
+  background-color: #003d57;
+  color: #ffffff;
+}
+
+.card {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+
+.curso-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen y Badges */
+.curso-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.curso-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-populared {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #c43e00; /* Naranja rojizo */
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+}
+
+.badge-categoria {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background: rgba(33, 43, 54, 0.85); /* Oscuro translúcido */
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Cuerpo de la tarjeta */
+.curso-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.curso-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.curso-rating .estrella {
+  color: #d96b00; /* Naranja/Dorado estrella */
+  font-size: 1.1rem;
+}
+
+.curso-rating strong {
+  color: #1a1a1a;
+  font-size: 1.05rem;
+}
+
+.curso-rating .reseñas {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.curso-titulo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+/* Detalles (módulos y coach) */
+.curso-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  color: #4b5563;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.curso-info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botón VER CURSO */
+.btn-curso {
+  margin-top: auto;
+  background-color: #00567a; /* Azul petróleo */
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 12px 20px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+  display: block;
+}
+
+.btn-curso:hover {
+  background-color: #003d57;
+  color: #ffffff;
+}
+
+.cartel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif; /* Tipografía recomendada */
+}
+
+.cartel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cartel-contenido {
+  position: absolute;
+  left: 2rem; /* Se desplaza bien hacia la izquierda */
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50%;
+  z-index: 2;
+}
+
+.cartel-contenido h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111111;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0 0 0.8rem 0;
+  letter-spacing: -0.5px;
+}
+
+/* Efecto para que la primera letra quede más grande */
+.cartel-contenido .letra-grande {
+  font-size: 3.2rem; /* Tamaño mayor para la primera letra */
+  font-weight: 900;
+  color: #000000;
+  vertical-align: baseline;
+}
+
+.cartel-contenido p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #555555;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .cartel-contenido {
+    left: 1rem;
+  }
+  .cartel-contenido h1 {
+    font-size: 1.3rem;
+  }
+  .cartel-contenido .letra-grande {
+    font-size: 1.8rem;
+  }
+  .cartel-contenido p {
+    font-size: 0.75rem;
+  }
+}
+
+.seccion-encabezado {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2.5rem 0;
+}
+
+.subtitulo {
+  color: #ff5522;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.badge {
+  background-color: #ffebe5;
+  color: #ff5522;
+  padding: 0.2rem 0.65rem;
+  border-radius: 50px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.titulo-principal {
+  color: #2c3038;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+  .subtitulo {
+    font-size: 0.75rem;
+  }
+  .titulo-principal {
+    font-size: 1.6rem;
+  }
+}
+
+/* Estilos para la sección de Cursos Gratuitos */
+.seccion-gratuitos {
+  padding: 3rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subtitulo-gratuitos {
+  color: #198754; /* Verde institucional/gratuito */
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.4rem;
+}
+
+.titulo-gratuitos {
+  color: #111827;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.card-gratuita {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-gratuita:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.badges-gratuita {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.badge-gratis {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.badge-modalidad {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.titulo-card-gratuita {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.texto-card-gratuita {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.btn-gratuito {
+  background-color: #198754;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 10px 18px;
+  border-radius: 50px;
+  transition: background-color 0.2s ease;
+  display: block;
+}
+
+.btn-gratuito:hover {
+  background-color: #146c43;
+  color: #ffffff;
+}
+
+/* --- BANNER CONTENEDOR PRINCIPAL --- */
+
+/* --- BANNER PRINCIPAL CON BENTO GRID Y AZUL CORPORATIVO --- */
+
+.banner-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 2.5rem;
+  background-color: #1a1c29;
+  border: 1px solid #2a2d3d;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Responsivo para celulares y tablets */
+@media (max-width: 992px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}
+
+/* --- COLUMNA IZQUIERDA: TEXTOS Y BENEFICIOS --- */
+
+.banner-title {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.banner-description {
+  color: #a0a5b5;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Grilla de 2 columnas para los ítems/beneficios */
+.banner-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.feature-icon {
+  font-size: 1.2rem;
+}
+
+/* Acciones y Botón Azul */
+.banner-action {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.banner-action .btn-primary {
+  background-color: #00567a !important; /* Azul base asignado */
+  color: #ffffff !important;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none !important;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.banner-action .btn-primary:hover {
+  background-color: #003d57 !important; /* Azul hover asignado */
+  transform: translateY(-2px);
+}
+
+.price-tag {
+  color: #a0a5b5;
+  font-size: 0.85rem;
+}
+
+/* --- COLUMNA DERECHA: BENTO GRID DE IMÁGENES --- */
+
+.banner-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 180px); /* Altura controlada para las tarjetas */
+  gap: 1rem;
+}
+
+/* Corrección fundamental: evita que las imágenes se rompan */
+.banner-gallery .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px !important;
+  overflow: hidden !important; /* Corta la imagen sobrante */
+  border: none !important;
+  background-color: #12141d;
+  margin: 0 !important;
+}
+
+.banner-gallery .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important; /* Adapta la imagen al cuadro sin deformar */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Sutil efecto de zoom en las fotos sin cambiar de color */
+.banner-gallery .card:hover img {
+  transform: scale(1.05);
+}
+
+/* Distribución Bento Grid */
+.banner-gallery .card-tall {
+  grid-column: 1;
+  grid-row: 1 / span 2; /* Ocupa 2 filas horizontales */
+}
+
+.banner-gallery .card-person {
+  grid-column: 2;
+  grid-row: 1 / span 2; /* Ocupa 2 filas horizontales */
+}
+
+.banner-gallery .card-small-top {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.banner-gallery .card-small-bottom {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* Botón y Certificación (Estilo Táctico/Deportivo) */
+.banner-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.btn-primary {
+  background-color: #003d57; /* Verde táctico / deportivo */ 
+  color: #0d1b2a;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #00567a;
+  transform: translateY(-2px);
+}
+
+.price-tag {
+  color: #8a8f9e;
+  font-size: 0.8rem;
+}
+
+/* --- COLUMNA DERECHA (BENTO GRID) --- */
+.banner-gallery {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 0.8fr;
+  grid-template-rows: repeat(2, 160px);
+  gap: 12px;
+  width: 100%;
+}
+
+/* --- SECCIÓN CERTIFICACIONES Y TITULACIONES (ESTILO IMAGEN 2) --- */
+
+.certificaciones-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 15px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Header */
+.certificaciones-header {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.certificaciones-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.certificaciones-header p {
+  font-size: 1rem;
+  color: #475569;
+  max-width: 900px;
+  line-height: 1.5;
+}
+
+/* Grilla */
+.certificaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .certificaciones-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tarjeta principal */
+.certi-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Bloque Superior de la Tarjeta */
+.certi-card-top {
+  background-color: #f0f5ff; /* Azul pastel claro */
+  border-radius: 16px;
+  padding: 24px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icono central circular */
+.certi-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.certi-sub {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #64748b;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.certi-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+
+/* Insignias / Badges */
+.certi-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge-blue {
+  background-color: #dbeafe;
+  color: #00567a;
+}
+
+.badge-orange {
+  background-color: #ffedd5;
+  color: #c05621;
+}
+
+/* Cuerpo de la Tarjeta */
+.certi-card-body {
+  padding: 20px 8px 15px 8px;
+}
+
+.certi-card-body h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.certi-card-body p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Footer de la Tarjeta */
+.certi-card-footer {
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+}
+
+.certi-card-footer span {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.certi-card-footer strong {
+  color: #00567a; /* Color azul corporativo definido previa/en banner */
+  font-weight: 700;
+}
+
+/* --- ACORDEÓN CON EFECTO HOVER Y MÁXIMO ANCHO (1200PX) --- */
+
+/* Contenedor principal */
+.accordion {
+  width: 100% !important;
+  max-width: 1200px !important; /* Mismo ancho que el banner principal */
+  margin: 20px auto !important;
+  border-radius: 16px !important;
+  background-color: #1a1c29 !important;
+  border: 1px solid #2a2d3d !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+  overflow: hidden;
+}
+
+/* Ítems del acordeón */
+.accordion-item {
+  background-color: transparent !important;
+  border-bottom: 1px solid #2a2d3d !important;
+}
+
+.accordion-item:last-child {
+  border-bottom: none !important;
+}
+
+/* Botón del acordeón (estado normal) */
+.accordion-button {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1.25rem 2rem !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* EFECTO HOVER: Cambia a verde táctico al pasar el cursor */
+.accordion-button:hover {
+  color: #00e676 !important;
+}
+
+/* Estado abierto / desplegado */
+.accordion-button:not(.collapsed) {
+  color: #00e676 !important;
+  background-color: rgba(0, 230, 118, 0.05) !important;
+}
+
+/* Flecha desplegable en blanco por defecto */
+.accordion-button::after {
+  filter: invert(1) brightness(200%);
+  transition: transform 0.3s ease, filter 0.2s ease;
+}
+
+/* Flecha verde táctico al estar abierto o al hacer hover */
+.accordion-button:not(.collapsed)::after,
+.accordion-button:hover::after {
+  filter: invert(53%) sepia(93%) saturate(1455%) hue-rotate(106deg) brightness(101%) contrast(106%);
+}
+
+/* Cuerpo de la respuesta */
+.accordion-body {
+  color: #a0a5b5 !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+
+.footer{
+  margin-top: 40px;
+  background-color: #24262b;
+  padding: 80px 0;
+
+}
+
+.contFooter{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-links{
+  width: 25%;
+  padding: 0 15px;
+
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  display: inline-block;
+}
+
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+  color: #ffffff;
+  padding-left: 6px;
+
+}
+
+.socialink a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(225, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+
+.socialink a:hover{
+    background-color: #00c3ff;
+}
+
+@media(max-width: 991px){
+  .footer-row{
+    text-align: center;
+  }
+  .footer-links{
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+
+}
+
+/* --- ENCABEZADO DE CURSOS DESTACADOS CON BOTÓN A LA DERECHA --- */
+
+.cursos-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 20px auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between; /* Alinea título a la izquierda y botón a la derecha */
+  align-items: center;
+  flex-wrap: wrap; /* Para adaptarse en celulares */
+  gap: 15px;
+}
+
+/* Título */
+.cursos-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Botón Rectangular con Border-Radius y Flecha */
+.btn-cursos {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #00567a; /* Color azul corporativo */
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px; /* Bordes redondeados sobrios */
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid #00567a;
+  transition: background-color 0.25s ease, transform 0.2s ease, border-color 0.25s ease;
+}
+
+.btn-cursos:hover {
+  background-color: #003d57; /* Color hover azul oscuro */
+  border-color: #003d57;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Animación sutil de la flecha al hacer hover */
+.btn-cursos svg {
+  transition: transform 0.2s ease;
+}
+
+.btn-cursos:hover svg {
+  transform: translateX(4px); /* Desplaza suavemente la flecha a la derecha */
+}
+
+/* --- SECCIÓN CERTIFICACIONES Y DIPLOMAS (CON IMÁGENES Y SIN BOTÓN) --- */
+
+/* Contenedor principal de la tarjeta */
+.card {
+  background-color: #1a1c29 !important; /* Mismo fondo oscuro */
+  border: 1px solid #2a2d3d !important;
+  border-radius: 16px !important;
+  overflow: hidden; /* Mantiene la imagen recortada dentro del borde redondeado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efecto hover sobre la tarjeta */
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #00e676 !important; /* Borde verde táctico */
+  box-shadow: 0 12px 30px rgba(0, 230, 118, 0.15) !important;
+}
+
+/* Contenedor e imagen superior */
+.card-img-wrapper {
+  width: 100%;
+  height: 180px; /* Altura fija para que todas las imágenes queden uniformes */
+  overflow: hidden;
+  background-color: #12141d;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  transition: transform 0.4s ease;
+}
+
+/* Efecto de zoom leve en la imagen al hacer hover sobre la tarjeta */
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+/* Título de la tarjeta */
+.card-title {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+/* Texto de la tarjeta */
+.card-text {
+  color: #a0a5b5 !important;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* --- ESTILO DE ENCABEZADO Y TEXTO (IMAGEN DE REFERENCIA) --- */
+
+.Form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding: 0 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Título principal: tipografía pesada, tono oscuro y tipografía limpia */
+.Form h1 {
+  color: #0b132a; /* Azul noche muy oscuro/casi negro */
+  font-size: 2.25rem; /* ~36px */
+  font-weight: 800; /* Extra bold */
+  letter-spacing: -0.02em; /* Compresión ligera del espaciado como en la foto */
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+}
+
+/* Subtítulo / Descripción */
+.Form p {
+  color: #4b5563; /* Gris intermedio para contraste suave */
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0;
+}
