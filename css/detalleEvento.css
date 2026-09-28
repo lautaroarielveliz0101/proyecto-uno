@@ -1,0 +1,248 @@
+.containerEvento {
+ padding-top: 20px;
+ padding-right: 30px;
+ padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;        
+  gap: 40px;                     
+  width: 100%;
+}
+
+.ContainerTarjeta{
+  width: 480px;       
+  flex-shrink: 0;
+  background-color: var(--color-primary-base);
+  border-radius: 28px;              
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.badgeEventsCash{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #c04000; /* Naranja/Marrón de la referencia */
+  color: #ffffff;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.60rem;
+  font-family: var(--font-category);
+}
+
+.cardImgText{
+    position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 10px;      
+  left: 20px;       
+  z-index: 2;        
+  color: #ffffff;  
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-category);
+}
+
+.overlayText .subTitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1px;
+
+}
+
+.overlayText .mainTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.cardBody{
+   padding: 20px 18px; 
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card-confirm{
+ background-color: #f0f5ff; 
+  border-radius: 20px;       
+  padding: 14px 18px;        
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  & > p {
+    margin: 0;              
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #2b3648;          
+    line-height: 1.3;
+  }
+}
+
+/* Contenedor general del segundo bloque */
+.card-jornada {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+/* Título 'SELECCIONAR JORNADA:' */
+.jornadaTitle {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #1a202c;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Fila contenedora de los 3 botones */
+.jornadaBotones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+
+.btnJornada {
+  flex: 1;                     
+  padding: 10px 12px;
+  background-color: #f0f5ff;   
+  color: #0d1b2a;              
+  border: none;
+  border-radius: 50px;        
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-align: center;
+}
+
+
+.btnJornada:hover {
+  background-color: #e0ecff;
+}
+
+
+.btnJornada.active {
+  background-color: #005073;   
+  color: #ffffff;              
+}
+
+/* Contenedor principal del tercer bloque (Píldora celeste/azul suave) */
+.card-cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eff5ff;   /* Fondo azul claro de la maqueta */
+  border-radius: 50px;         /* Forma de cápsula/píldora */
+  padding: 12px 20px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+
+.cantidad-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+
+.cantidad-titulo {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0b1e36;              
+  margin: 0;
+}
+
+
+.cantidad-subtitulo {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #5a6e85;              
+  margin: 0;
+}
+
+
+.cantidad-contador {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Botones circulares (-) y (+) */
+.btn-step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;         
+  background-color: #ffffff;   
+  border: none;
+  color: #0b1e36;              
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); 
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.btn-step:hover {
+  background-color: #f8fafc;
+  transform: scale(1.05);       
+}
+
+.btn-step:active {
+  transform: scale(0.95);
+}
+
+
+.cantidad-numero {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #005073;              
+  min-width: 16px;
+  text-align: center;
+}
+
+.btnCard {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 100%;            
+  padding: 14px 20px;
+  margin-top: 15px;
+  background-color: var(--color-inverted);
+  color: #ffffff;
+  border-radius: 50px;       
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+
+.btnCard:hover {
+  background-color: #003852;
+  color: #ffffff;
+}
