@@ -712,3 +712,226 @@ html, body {
   color: #ffffff;
 }
 
+/* --- BANNER CONTENEDOR PRINCIPAL --- */
+.banner-container {
+  background-color: #1a1c29; /* Color de fondo oscuro */
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* --- COLUMNA IZQUIERDA --- */
+.banner-info {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.banner-description {
+  color: #a0a5b5;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Grilla de ítems / características tácticas */
+.banner-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #e0e0e0;
+}
+
+.feature-icon {
+  background-color: #2a2d3d;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+/* Botón y Certificación (Estilo Táctico/Deportivo) */
+.banner-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.btn-primary {
+  background-color: #00e676; /* Verde táctico / deportivo */
+  color: #0d1b2a;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #00c853;
+  transform: translateY(-2px);
+}
+
+.price-tag {
+  color: #8a8f9e;
+  font-size: 0.8rem;
+}
+
+/* --- COLUMNA DERECHA (BENTO GRID) --- */
+.banner-gallery {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 0.8fr;
+  grid-template-rows: repeat(2, 160px);
+  gap: 12px;
+  width: 100%;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #2a2d3d;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Posicionamiento específico del Grid */
+.card-tall {
+  grid-column: 1;
+  grid-row: 1 / 3; /* Ocupa las 2 filas de la izquierda */
+}
+
+.card-person {
+  grid-column: 2;
+  grid-row: 1 / 3; /* Ocupa las 2 filas del centro */
+}
+
+.card-small-top {
+  grid-column: 3;
+  grid-row: 1; /* Fila superior derecha */
+  background-color: #1e293b;
+}
+
+.card-small-bottom {
+  grid-column: 3;
+  grid-row: 2; /* Fila inferior derecha */
+  background-color: #10172a;
+}
+
+/* --- ADAPTABILIDAD PARA MÓVILES (RESPONSIVE) --- */
+@media (max-width: 900px) {
+  .banner-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .banner-features {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .card-tall, .card-person {
+    grid-row: auto;
+  }
+}
+
+/* --- SECCIÓN PREGUNTAS FRECUENTES --- */
+.accordion {
+  border-radius: 16px;
+  background-color: #1a1c29 !important; /* Fondo oscuro acorde al banner */
+  border: 1px solid #2a2d3d;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Ítems individuales y bordes divisores */
+.accordion-item {
+  border-bottom: 1px solid #2a2d3d !important;
+}
+
+.accordion-item:last-child {
+  border-bottom: none !important;
+}
+
+/* Botón del acordeón (pregunta) */
+.accordion-button {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1.25rem 1.5rem;
+  color: #ffffff !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.accordion-button:hover {
+  color: #00e676 !important; /* Verde táctico al pasar el cursor */
+}
+
+/* Estado activo / abierto */
+.accordion-button:not(.collapsed) {
+  color: #00e676 !important;
+  background-color: rgba(0, 230, 118, 0.05) !important;
+}
+
+/* Cambiar el color del ícono de la flecha (flecha blanca / verde) */
+.accordion-button::after {
+  filter: invert(1) grayscale(100%) brightness(200%); /* Cambia la flecha negra por blanca */
+  transition: transform 0.3s ease, filter 0.2s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  /* Al desplegar, resalta la flecha en color verde táctico */
+  filter: invert(53%) sepia(93%) saturate(1455%) hue-rotate(106deg) brightness(101%) contrast(106%);
+}
+
+/* Cuerpo de la respuesta */
+.accordion-body {
+  color: #a0a5b5 !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
