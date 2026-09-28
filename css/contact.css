@@ -1,0 +1,183 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+.contacto-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.contacto-imagen {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.contacto-imagen img {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    
+}
+
+
+.contacto-formulario {
+    width: 45%;
+    padding: 25px 45px;
+    background-color: #f3f0ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TÍTULO */
+.contacto-formulario h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #111111;
+}
+
+
+.form-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #222222;
+}
+
+
+.form-control,
+.form-select {
+    width: 100%;
+    min-height: 45px;
+    border: none;
+    border-radius: 35px;
+    padding: 10px 18px;
+    font-size: 15px;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+/* EFECTO AL SELECCIONAR */
+.form-control:focus,
+.form-select:focus {
+    border: 1px solid #222222;
+    box-shadow: none;
+}
+
+/* ÁREA DEL MENSAJE */
+textarea.form-control {
+    min-height: 90px;
+    height: 90px;
+    border-radius: 20px;
+    resize: none;
+}
+
+/* ESPACIADO ENTRE CAMPOS */
+.contacto-formulario form > .mb-4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ESPACIO ENTRE NOMBRE Y CORREO */
+.contacto-formulario .row {
+    --bs-gutter-y: 10px;
+}
+
+/* BOTÓN ENVIAR */
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 35px;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 768px) {
+
+    body {
+        overflow-y: auto;
+    }
+
+    .contacto-container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .contacto-imagen {
+        width: 100%;
+        min-height: 200px;
+        height: 200px;
+    }
+
+    .contacto-imagen img {
+        width: 30%;
+    }
+
+    .contacto-formulario {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .contacto-formulario h1 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .contacto-formulario .row {
+        row-gap: 15px;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 15px;
+    }
+
+    textarea.form-control {
+        min-height: 100px;
+    }
+}
+
+/* PANTALLAS DE POCA ALTURA */
+@media (min-width: 769px) and (max-height: 750px) {
+
+    .contacto-container {
+        min-height: 100vh;
+    }
+
+    .contacto-formulario {
+        padding: 15px 35px;
+    }
+}

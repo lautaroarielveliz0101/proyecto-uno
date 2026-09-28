@@ -105,3 +105,429 @@ section.eventos .contenedor-botones {
         padding-top: 15px;
     }
 }
+
+/* css de page events - contenedor buscador*/
+
+.ConteinerCategory{
+background-color: var(--color-primary-base);
+  padding-top: 50px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  cursor:default;
+& h1 {font-family: var(--font-category);
+font-weight: 800;
+
+&:nth-of-type(2) {
+      color:var(--color-primary-dark); /* <-- Reemplaza 'red' por el color o variable var() que prefieras */
+    }
+
+}
+   & > p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 0;       
+  margin-bottom: 14px;
+  line-height: 1.3;
+   max-width: 700px;
+}
+}
+
+/* contenedor tarjetas */
+
+.ConteinerCategoryEvents{
+background-color: var(--color-primary-base);
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  cursor:default;
+& h1 {
+font-weight: 700;
+}
+& > p {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-top: 0;       
+  margin-bottom: 14px;
+  line-height: 1.3;
+
+}
+
+& p:nth-of-type(1) {
+    font-weight: bold;
+    color: var(--color-primary-dark);
+    font-weight: 400;
+  }
+}
+
+
+.divBuscador{
+  padding: 20px 30px;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.search{
+   display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.search input {
+  flex: 1;                    
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+}
+
+.btnBuscar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  background-color: var(--color-primary-dark, #006699);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  white-space: nowrap;         /* No permite que el texto "Buscar" se rompa */
+  flex-shrink: 0;              /* Evita que se encoja en pantalla grande */
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;           /* En pantalla grande se mantienen alineados horizontalmente */
+}
+
+.botones > p {
+  margin: 0;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.btn-outline-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  width: auto;                 /* Permite que la cápsula se ajuste al largo del texto */
+  font-size: 0.85rem;
+  border: 1px solid #006699;
+}
+
+@media (max-width: 768px) {
+  .divBuscador {
+    padding: 15px;
+  }
+
+  /* Permite que el input y el botón se acomoden si la pantalla se achica */
+  .search {
+    flex-wrap: wrap;
+  }
+
+  .search input {
+    width: 100%;
+    flex: none;
+  }
+
+  .btnBuscar {
+    width: 100%;                /* El botón se expande a lo ancho en celulares */
+    margin-top: 5px;
+  }
+
+  /* Permite que las cápsulas de filtro bajen a una 2da o 3ra línea si no entran */
+  .botones {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
+.cardCategoryEvents{
+  border-radius: 28px;              
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 150%;
+}
+
+.cardCategoryEvents:hover  img {
+  /* Escala la imagen un 8% o 10% más grande */
+  transform: scale(1.03); 
+  transition: transform 0.4s ease-in-out;
+}
+.cardBody{
+  padding: 5%;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.3;
+   max-width: 750px;
+   display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  & > p {
+    color: black;
+  }
+}
+
+.cardImg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+
+.badgesContainer {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  display: flex;
+  gap: 4px; /* Espacio entre los dos badges */
+}
+
+/* Estilos individuales */
+.badgeCategory {
+  background-color: #ffffff;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.60rem;
+  font-family: var(--font-category);
+}
+
+.badgeDescripcion {
+  background-color: var(--color-inverted);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.60rem;
+  font-family: var(--font-category);
+}
+
+.badgeCupos  {
+  background-color: #ffffff;;
+  font-weight: 400;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.55rem;
+  font-family: var(--font-category);
+  position: absolute;
+  display: flex;
+  left: 280px;
+  bottom: 8px;
+}
+@media (max-width: 768px) {
+  
+  .badgeCupos {
+    position: absolute !important;
+    left: auto !important;     /* 👈 Cancela el left: 280px fijado en escritorio */
+    right: 12px !important;    /* 👈 Lo ubica a 12px de la esquina derecha */
+    bottom: 12px !important;   /* 👈 Lo ubica a 12px de la parte inferior */
+  }
+
+}
+
+
+.overlayText {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  color: #ffffff;
+  font-family: var(--font-category);
+}
+
+.overlayText .subTitle {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.overlayText .mainTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.btnCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;                  
+  padding: 12px 24px;          
+  border-radius: 50px;          
+  background-color: var(--color-btn);    
+  color:var(--color-primary-base);               
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;             
+  letter-spacing: 0.5px;
+  margin-top: auto;
+}
+
+.row{
+   margin-top: 2%;
+}
+
+
+
+.ContainerCreateEvents{
+  background-color: var(--color-primary-dark);
+  position: relative; /* 👈 Obligatorio para que el 'position: absolute' tome esta tarjeta de referencia */
+  color: var(--color-primary-base);
+  border-radius: 50px;
+  padding: 50px;
+}
+
+.ContainerCreateEvents > h1 {
+  font-family: var(--font-category);
+}
+
+.ContainerCreateEvents > p {
+  font-family: var(--font-primary);
+}
+
+
+.badgeTextCreateEvents{
+  padding-top: 30px;
+  max-width: 600px;
+}
+
+.badgesContainerCreateEvents{
+ position: absolute;
+  right: 90px;
+  bottom: 80px;                   /* Ajustado para alinear correctamente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  
+}
+
+.btnPublicarEvento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #c04000; /* Naranja/marrón de la referencia */
+  color: #ffffff;
+  padding: 14px 40px;
+  border-radius: 50px;       /* Forma de píldora redondeada */
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.5px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btnPublicarEvento:hover {
+  background-color: #a33600;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.subtituloRevision {
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.9;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .ContainerCreateEvents {
+    padding: 30px 20px;            /* Reducimos el padding interno */
+    border-radius: 30px;
+  }
+
+  .badgeTextCreateEvents {
+    padding-top: 20px;
+    max-width: 100%;
+  }
+
+  /* Desactivamos la posición absoluta en móviles para que baje ordenadamente */
+  .badgesContainerCreateEvents {
+    position: static;             /* 👈 Elimina el posicionamiento flotante */
+    margin-top: 35px;             /* Separa el botón de los textos superiores */
+    width: 100%;
+    align-items: center;
+  }
+
+  .btnPublicarEvento {
+    width: 100%;                  /* Se adapta a lo ancho en móviles */
+    max-width: 320px;             /* Mantener un tamaño legible sin deformarse */
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
+  
+/* Contenedor principal de la fecha y ubicación */
+.evento-meta-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Agrupador de icono + texto */
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Estilo de los iconos SVG */
+.meta-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #02669a; /* Color azul del icono */
+  flex-shrink: 0;
+}
+
+/* Estilo del texto de la Fecha */
+.fecha-texto {
+  color: #02669a;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* Punto separador */
+.meta-dot {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Estilo del texto de la Ubicación */
+.ubicacion-texto {
+  color: #495057;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
