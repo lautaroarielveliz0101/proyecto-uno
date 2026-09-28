@@ -1,4 +1,4 @@
-main {
+smain {
     background-color: rgb(224, 224, 224);
     width: 100%;
     & h1 {
@@ -32,6 +32,7 @@ main {
   color: #ffffff;
 }
 
+
 .publicidad {
     width: 100%;
     /* height: 350px; */
@@ -45,4 +46,82 @@ main {
     /* height: 350px; */
     object-fit: fill;
     display: block;
+    }
+
+/* Contenedor exterior para centrar la tarjeta en la página */
+.tarjeta-publicidad-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+
+}
+
+/* Contenedor Flex para alinear las tarjetas a la par */
+.publicidades-contenedor {
+  display: flex;
+  justify-content: center; /* Las centra en la pantalla */
+  align-items: center;
+  gap: 20px;               /* Espacio de separación entre las dos tarjetas */
+  flex-wrap: wrap;         /* Si no entran (ej. en móviles), la 2da baja automáticamente */
+  width: 100%;
+  padding: 20px 10px;
+}
+
+/* Tamaño individual de cada tarjeta */
+.tarjeta-publicidad {
+  max-width: 500px;         /* Ancho suficiente para estar a la par sin romper el diseño */
+  width: 100%;
+  height: 280px;            /* Altura uniforme para ambas */
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Ajuste de la imagen dentro de su 50% */
+.ad-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* Muestra la imagen 100% entera */
+  object-position: center;
+  background-color: #0c1a2e; /* Fondo oscuro elegante para bordes sobrantes */
+  display: block;
+}
+
+
+
+/* Contenedor Flex para alinear las tarjetas a la par */
+.publicidades-contenedor {
+  display: flex;
+  justify-content: center; /* Las centra en la pantalla */
+  align-items: center;
+  gap: 20px;               /* Espacio de separación entre las dos tarjetas */
+  flex-wrap: wrap;         /* Si no entran (ej. en móviles), la 2da baja automáticamente */
+  width: 100%;
+  padding: 20px 10px;
+}
+
+/* Tamaño individual de cada tarjeta */
+.tarjeta-publicidad {
+  max-width: 500px;         /* Ancho suficiente para estar a la par sin romper el diseño */
+  width: 100%;
+  height: 280px;            /* Altura uniforme para ambas */
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Ajuste de la imagen dentro de su 50% */
+.ad-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* Muestra la imagen 100% entera */
+  object-position: center;
+  background-color: #0c1a2e; /* Fondo oscuro elegante para bordes sobrantes */
+  display: block;
+
 }
