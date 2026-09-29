@@ -1,0 +1,509 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+  font-family: "DM Sans", sans-serif;
+  display: flow-root;
+}
+
+footer {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Estructura general de la tarjeta */
+.curso-card {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 50vh;
+  min-height: 400px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.curso-imagen {
+  flex: 0 0 40%;
+  height: 100%;
+}
+
+.curso-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Columna derecha y distribución vertical */
+.curso-contenido {
+  flex: 1;
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantiene ordenados los 3 bloques */
+}
+
+/* Título, Autores y Fecha */
+.curso-titulo {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.curso-meta {
+  margin: 0 0 6px 0;
+  font-size: 0.95rem;
+  color: #555555;
+}
+
+.autor-link {
+  color: #00c3ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.autor-link:hover {
+  text-decoration: underline;
+}
+
+.curso-fecha {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777777;
+}
+
+/* Descripción del curso */
+.curso-descripcion {
+  margin: 15px 0;
+  font-size: 0.98rem;
+  color: #444444;
+  line-height: 1.5;
+}
+
+/* Footer: Precio y Botones */
+.curso-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px;
+  gap: 15px;
+}
+
+.precio {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00c3ff;
+}
+
+.acciones-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botón Agregar al Carrito (Secundario) */
+.btn-carrito {
+  background-color: transparent;
+  color: #00c3ff;
+  border: 2px solid #00c3ff;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-carrito:hover {
+  background-color: #00c3ff;
+  color: #ffffff;
+}
+
+/* Botón Inscribirme ahora (Principal) */
+.btn-inscribirme {
+  background-color: #00c3ff;
+  color: #ffffff;
+  border: 2px solid #00c3ff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-inscribirme:hover {
+  background-color: #0099cc;
+  border-color: #0099cc;
+}
+
+/* Contenedor principal de la sección */
+.aprenderas-seccion {
+  width: 75vw;
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.seccion-titulo {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* Grilla de 2 columnas x 2 filas */
+.aprenderas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Fuerza 2 columnas iguales */
+  gap: 25px;                            /* Espacio entre tarjetas */
+}
+
+/* Tarjeta individual */
+.aprenderas-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Encabezado superior azul/gris clarito */
+.card-header-top {
+  background-color: #f0f5ff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #e6edfe;
+}
+
+/* Círculo del ícono */
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00c3ff;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+.academy-brand {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-title {
+  margin: 4px 0 8px 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* Badges / Etiquetado */
+.badge-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.tag-azul { background-color: #e0f2fe; color: #0284c7; }
+.tag-verde { background-color: #dcfce7; color: #15803d; }
+.tag-naranja { background-color: #ffedd5; color: #c2410c; }
+.tag-morado { background-color: #f3e8ff; color: #6b21a8; }
+
+/* Cuerpo de la tarjeta */
+.card-body-content {
+  padding: 20px 24px;
+  flex: 1;
+}
+
+.card-title-main {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Pie de tarjeta con línea punteada */
+.card-footer-info {
+  padding: 15px 24px;
+  border-top: 1px dashed #cbd5e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.carga-horaria {
+  font-weight: 700;
+  color: #00c3ff;
+}
+
+/* Responsivo para celulares (pasan a 1 columna) */
+@media (max-width: 768px) {
+  .aprenderas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contenedor alineado con el ancho de las tarjetas */
+.descarga-simple-container {
+  width: 75vw;
+  max-width: 1000px;
+  margin: 20px auto 0 auto; /* Alineado al centro como el bloque, pero con el contenido adentro a la izquierda */
+  text-align: left;
+}
+
+/* Botón simple alineado a la izquierda */
+.btn-descargar-simple {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #00c3ff;
+  color: white;
+  border: 1px solid #00c3ff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-descargar-simple:hover {
+  background-color: #00c3ff;
+  color: #ffffff;
+}
+
+/* Contenedor principal del acordeón */
+.faq-seccion {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 16px;
+  background-color: #1a1c29;
+  border: 1px solid #2a2d3d;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+.faq-titulo {
+  color: #1a1a1a;        /* Color del texto fuera del bloque oscuro */
+  margin-bottom: 15px;   /* Espacio para separarlo de la tarjeta oscura */
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Contenedor de items */
+.faq-acordeon {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ítems del acordeón */
+.faq-item {
+  background-color: transparent;
+  border-bottom: 1px solid #2a2d3d;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+/* Pregunta / Botón */
+.faq-pregunta {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1.25rem 2rem;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  user-select: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.faq-pregunta::-webkit-details-marker {
+  display: none;
+}
+
+/* HOVER: Cambia al celeste táctico del proyecto (#00c3ff) */
+.faq-pregunta:hover {
+  color: #00c3ff;
+}
+
+/* Estado desplegado/abierto */
+.faq-item[open] .faq-pregunta {
+  color: #00c3ff;
+  background-color: rgba(0, 195, 255, 0.05);
+}
+
+/* Flecha desplegable */
+.faq-icono {
+  font-size: 0.85rem;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+/* Flecha al estar abierto o en hover */
+.faq-item[open] .faq-icono,
+.faq-pregunta:hover .faq-icono {
+  color: #00c3ff;
+}
+
+.faq-item[open] .faq-icono {
+  transform: rotate(180deg);
+}
+
+/* Cuerpo de la respuesta */
+.faq-respuesta {
+  color: #a0a5b5;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 2rem 1.5rem 2rem;
+}
+ 
+.footer {
+  margin-top: 40px;
+  background-color: #24262b;
+  padding: 80px 0;
+}
+
+.contFooter {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  display: inline-block;
+}
+
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #ffffff; /* Color blanco para los íconos */
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+  color: #24262b;
+  background-color: #00c3ff;
+}
+
+.socialink a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(225, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+
+.socialink a:hover{
+    background-color: #00c3ff;
+}
+
+@media(max-width: 991px){
+  .footer-row{
+    text-align: center;
+  }
+  .footer-links{
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+
+}
