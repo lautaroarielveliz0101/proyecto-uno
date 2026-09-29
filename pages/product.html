@@ -17,10 +17,19 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
   </head>
   <body>
     <nav>
@@ -156,8 +165,12 @@
         </ul>
 
         <div class="mobileLogin">
-          <a href=""><button class="register1">Iniciar Sesión</button></a>
-          <a href=""><button class="register2">Crear Cuenta</button></a>
+          <a href="/pages/login.html"
+            ><button class="register1">Iniciar Sesión</button></a
+          >
+          <a href="/pages/register.html"
+            ><button class="register2">Crear Cuenta</button></a
+          >
         </div>
       </div>
     </div>
@@ -284,15 +297,12 @@
             <!-- ========================= -->
 
             <div class="row g-4">
-              
               <!-- PRODUCTO 1 -->
-              
 
               <div class="col-md-6 col-xl-3">
                 <article class="producto-card">
                   <div class="imagen-producto">
                     <a href="../pages/detailproduct.html">
-
                       <img
                         src="../assets/img/campera puma.webp"
                         alt="Camiseta deportiva"
@@ -329,23 +339,15 @@
 
                     <hr />
 
-                    <div class="precio-producto text-center text-center">$34.900 ARS</div>
+                    <div class="precio-producto text-center">$34.900 ARS</div>
 
-                                    <div class="cuotas">
-                                        6 cuotas fijas de $5.816
-                                    </div>
-
-
-                                    <button class="agregar">
-                                         AÑADIR AL CARRITO
-                                    </button>
-
-                                </div>
-
-                            </article>
-
-                        </div>
-
+                    <div class="cuotas">6 cuotas fijas de $5.816</div>
+                    <a href="/pages/cart.html">
+                      <button class="agregar">AÑADIR AL CARRITO</button>
+                    </a>
+                  </div>
+                </article>
+              </div>
 
               <!-- ========================= -->
               <!-- PRODUCTO 2 -->
@@ -355,10 +357,9 @@
                 <article class="producto-card">
                   <div class="imagen-producto">
                     <a href="../pages/error404.html">
-
                       <img
-                      src="../assets/img/short hov.jpg"
-                      alt="Calza deportiva"
+                        src="../assets/img/short hov.jpg"
+                        alt="Calza deportiva"
                       />
                     </a>
 
@@ -388,7 +389,7 @@
 
                     <hr />
 
-                    <div class="precio-producto text-center text-center">$20.000 ARS</div>
+                    <div class="precio-producto text-center">$20.000 ARS</div>
 
                     <div class="cuotas">6 cuotas fijas de $3.333</div>
                     <a href="/pages/cart.html">
@@ -398,19 +399,16 @@
                 </article>
               </div>
 
-              
               <!-- PRODUCTO 3 -->
-              
 
               <div class="col-md-6 col-xl-3">
                 <article class="producto-card">
                   <div class="imagen-producto">
-                   <a href="../pages/error404.html">
-
-                     <img
-                     src="../assets/img/visera.webp"
-                     alt="Pollera deportiva"
-                     />
+                    <a href="../pages/error404.html">
+                      <img
+                        src="../assets/img/visera.webp"
+                        alt="Pollera deportiva"
+                      />
                     </a>
 
                     <span class="badge-producto verde">
@@ -445,35 +443,25 @@
 
                     <hr />
 
-                    <div class="precio-producto text-center text-center">$29.800 ARS</div>
+                    <div class="precio-producto text-center">$29.800 ARS</div>
 
-                                    <div class="cuotas">
-                                        6 cuotas fijas de $4.966
-                                    </div>
+                    <div class="cuotas">6 cuotas fijas de $4.966</div>
+                    <a href="/pages/cart.html">
+                      <button class="agregar">AÑADIR AL CARRITO</button>
+                    </a>
+                  </div>
+                </article>
+              </div>
 
-
-                                    <button class="agregar">
-                                         AÑADIR AL CARRITO
-                                    </button>
-
-                                </div>
-
-                            </article>
-
-                        </div>
-
-
-              
               <!-- PRODUCTO 4 -->
 
               <div class="col-md-6 col-xl-3">
                 <article class="producto-card">
                   <div class="imagen-producto">
                     <a href="../pages/error404.html">
-
                       <img
-                      src="../assets/img/zapa clavo.jpg"
-                      alt="Campera deportiva"
+                        src="../assets/img/zapa clavo.jpg"
+                        alt="Campera deportiva"
                       />
                     </a>
 
@@ -485,55 +473,84 @@
                       SPORTAR STORM · OUTDOOR TRAINING
                     </span>
 
-                    <h2>
-                      Zapatillas De Atletismo Puma Evospeed
-                    </h2>
+                    <h2>Zapatillas De Atletismo Evospeed</h2>
 
                     <div class="talles-producto">
                       <strong>TALLES:</strong>
 
-                                        <a href="../pages/error404.html">
-                                            <span>38.5</span>
-                                        </a>
-
-                                    </div>
-
-
-                                    <hr>
-
-
-                                    <div class="precio-producto text-center">
-                                        $68.000 ARS
-                                    </div>
-
-                                    <div class="cuotas">
-                                        6 cuotas fijas de $11.333
-                                    </div>
-
-
-                                    <button class="agregar">
-                                          AÑADIR AL CARRITO
-                                    </button>
-
-                                </div>
-
-                            </article>
-
-                        </div>
-
+                      <a href="../pages/error404.html">
+                        <span>38.5</span>
+                      </a>
                     </div>
 
-                    <hr/>
+                    <hr />
 
-                    
+                    <div class="precio-producto text-center">$68.000 ARS</div>
+
+                    <div class="cuotas">6 cuotas fijas de $11.333</div>
+                    <a href="/pages/cart.html">
+                      <button class="agregar">AÑADIR AL CARRITO</button>
+                    </a>
                   </div>
                 </article>
               </div>
             </div>
+
+            <hr />
           </section>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="contFooter">
+        <div class="footer-row">
+          <div class="footer-links">
+            <h4>Compañia</h4>
+            <ul>
+              <li><a href="/pages/aboutUs.html">Nosotros</a></li>
+              <li><a href="/pages/error404.html">Nuestros servicios</a></li>
+              <li><a href="/pages/error404.html">Politica de privacidad</a></li>
+              <li><a href="/pages/register.html">Afiliate</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="/pages/error404.html">Preguntas</a></li>
+              <li><a href="/pages/error404.html">Compras</a></li>
+              <li><a href="/pages/error404.html">Envios</a></li>
+              <li><a href="/pages/error404.html">Pago</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tienda</h4>
+            <ul>
+              <li><a href="/pages/error404.html">Indumentaria</a></li>
+              <li><a href="/pages/error404.html">Zapatillas</a></li>
+              <li><a href="/pages/error404.html">Accesorios</a></li>
+              <li><a href="/pages/error404.html">Materiales</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Siguenos</h4>
+            <div class="socialink">
+              <a href="/pages/error404.html"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="/pages/error404.html"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/pages/error404.html"><i class="fab fa-twitter"></i></a>
+              <a href="/pages/error404.html"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
