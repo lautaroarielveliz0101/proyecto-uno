@@ -401,14 +401,12 @@ body {
 .footer {
   margin-top: 40px;
   background-color: #24262b;
-  padding: 60px 0;
-  box-sizing: border-box;
+  padding: 80px 0;
 }
 
 .contFooter {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .footer-row {
@@ -422,71 +420,80 @@ body {
   box-sizing: border-box;
 }
 
-.footer-links h4 {
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 25px;
-  font-weight: 500;
-  border-bottom: 2px solid #00c3ff;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* Quita los puntos negros por defecto de la lista */
 .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  display: inline-block;
+}
+
 .footer-links ul li a {
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   color: #bbbbbb;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   transition: all 0.3s ease;
 }
 
 .footer-links ul li a:hover {
-  color: #00c3ff;
+  color: #ffffff;
   padding-left: 6px;
 }
 
-/* Estilos para los íconos de redes sociales */
-.socialink {
-  display: flex;
-  gap: 10px;
-}
-
-.socialink a {
+.social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 40px;
   width: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
   border-radius: 50%;
+  color: #ffffff; /* Color blanco para los íconos */
   text-decoration: none;
-  transition: all 0.3s ease;
+  font-size: 18px;
+  transition: all 0.5s ease;
 }
 
-.socialink a:hover {
+.social-links a:hover {
+  color: #24262b;
   background-color: #00c3ff;
+}
+
+.socialink a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(225, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
   color: #ffffff;
+  transition: all .5s ease;
 }
 
-/* Responsivo para pantallas pequeñas */
-@media (max-width: 768px) {
-  .footer-links {
-    width: 50%;
-    margin-bottom: 30px;
+.socialink a:hover{
+    background-color: #00c3ff;
+}
+
+@media(max-width: 991px){
+  .footer-row{
+    text-align: center;
   }
-}
-
-@media (max-width: 480px) {
-  .footer-links {
+  .footer-links{
     width: 100%;
+    margin-bottom: 30px;
+
   }
+
 }
