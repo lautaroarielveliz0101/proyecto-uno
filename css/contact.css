@@ -9,39 +9,33 @@
 }
 
 
-
-
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
     background-color: #ffffff;
-    overflow: hidden;
     width: 100%;
-    height: 100%;
 }
 
 
 
 .contacto-container {
     display: flex;
+    align-items: flex-start;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 0;
 }
 
 
 .contacto-imagen {
-    width: 55%;
-    height: 100vh;
+    width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #ffffff;
-    overflow: hidden;
+    padding-top: 35px;
 }
 
 .contacto-imagen img {
-    width: 90%;
+    width: 100%;
     height: auto;
     object-fit: contain;
     display: block;
@@ -49,30 +43,29 @@ body {
 
 
 .contacto-formulario {
-    width: 45%;
-    height: 100vh;
-    padding: 25px 45px;
-    background-color: #f3f0ee;
+    width: 50%;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
+    justify-content: flex-start;
+    padding: 20px 10px;
 }
 
-
-
-.contacto-formulario h1 {
+.contacto-formulario h3 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #111111;
 }
 
 .form-label {
-    display: block;
+    display: flex;
+    justify-content: center;
     font-size: 15px;
-    margin-bottom: 6px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-top: 10px;
     color: #222222;
 }
 
@@ -81,13 +74,14 @@ body {
 .form-control,
 .form-select {
     width: 100%;
-    min-height: 45px;
-    border: none;
+    min-height: 35px;
+    border: 1px solid gainsboro;
     border-radius: 35px;
     padding: 10px 18px;
     font-size: 15px;
-    background-color: #ffffff;
-    box-shadow: none;
+    box-shadow: 1px 7px 12px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 7px 12px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 12px -5px rgba(0,0,0,0.75);
 }
 
 .form-control:focus,
@@ -98,7 +92,7 @@ body {
 
 
 textarea.form-control {
-    min-height: 90px;
+    min-height: 150px;
     height: 90px;
     border-radius: 20px;
     resize: none;
@@ -116,7 +110,6 @@ textarea.form-control {
     margin-top: 15px;
     border: none;
     border-radius: 35px;
-    background-color: blue;
     color: #ffffff;
     font-size: 15px;
     font-weight: 700;
@@ -126,16 +119,11 @@ textarea.form-control {
 
 @media (max-width: 768px) {
 
-    body {
-        overflow-y: auto;
-    }
-
     .contacto-container {
         width: 100%;
         height: auto;
-        min-height: 100vh;
+        display: flex;
         flex-direction: column;
-        overflow: visible;
     }
 
     .contacto-imagen {
@@ -150,9 +138,7 @@ textarea.form-control {
 
     .contacto-formulario {
         width: 100%;
-        height: auto;
         padding: 30px 25px;
-        overflow: visible;
     }
 
     .contacto-formulario h1 {

@@ -1,13 +1,14 @@
 main {
     width: 100%;
+    background-color: rgb(224, 224, 224);
 }
 
 .grupal {
   font-family: "DM Sans", sans-serif;
   font-style: italic;
-  padding-top: 10px;
+  padding: 10px;
   width: 100%;
-  height: 600px;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -16,8 +17,10 @@ main {
 
 /* Tamaño de la tarjeta */
 .card-flip {
-  width: 1000px;
-  height: 500px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 2 / 1;
+  height: auto;
   perspective: 1000px;
 }
 
@@ -68,41 +71,42 @@ main {
 }
 
 .individual {
-    font-family: "DM Sans", sans-serif;
-    width: 100%;
-    height: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    & .card-group {
-        width: 100%;
-        display: flex;
-        gap: 10px;
-        padding: 10px;
-        & .card {
-            border: none;
-            background-color: rgb(224, 224, 224);
-            border-radius: 20px;
-            padding: 15px;
-            }
-            .card:hover {
-              transform: scale(1.05);
-              transition: ease 0.3s transform;
-              cursor: pointer;
-            }
-            /* & .card:hover {
-                border-radius:50%;
-                box-shadow: 0px 0px 15px 15px grey;
-                -webkit-border-radius:50%;
-                -webkit-box-shadow: 0px 0px 15px 15px grey;
-                transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-            } */
-            & h5 {
-                 display: flex;
-                 justify-content: center;
-                 text-align: center;
-                 font-weight: 600;
-            }
-    }
+  font-family: "DM Sans", sans-serif;
+  padding-block: 2rem;
+}
+
+.individual .card {
+  border: none;
+  background-color: rgb(224, 224, 224);
+  border-radius: 20px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.individual .card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Avatares cuadrados y circulares (sacá border-radius si los querés cuadrados) */
+.individual .card-img-top {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.individual h5 {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Celulares */
+@media (max-width: 767.98px) {
+  .individual .card {
+    padding: 10px;
+  }
+
+  .individual h5 {
+    font-size: 1rem;
+  }
 }

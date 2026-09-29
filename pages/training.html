@@ -1,19 +1,35 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Deport AR</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/training.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/category.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/training.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../css/category.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
-      <nav>
+    <nav>
       <div class="upNavbar">
         <!-- NUEVO: botón hamburguesa (solo visible en celular/tablet) -->
         <button
@@ -39,7 +55,7 @@
         <!-- Fin de botón hamburguesa -->
 
         <a href="/index.html">
-          <img src="./assets/img/logoNewWhite.jpg" alt="logo" />
+          <img src="/assets/img/logoNewWhite.jpg" alt="logo" />
         </a>
         <div class="search">
           <span>
@@ -73,7 +89,6 @@
         <div class="cart">
           <a href="/pages/cart.html">
             <button class="buttonCart">
-              <!-- <span>Carrito</span> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -115,520 +130,680 @@
       </div>
     </nav>
 
-    <!-- Inicio titulo -->
+    <main>
+      <!-- Inicio titulo -->
 
-     <section class="cartel">
-  <div class="cartel-contenido">
-    <h1>
-      <span class="letra-grande">A</span>PRENDE DE LOS 
-      <span class="letra-grande">M</span>EJORES.
-    </h1>
-    <p>Lleva tu conocimiento al siguiente nivel.</p>
-  </div>
-  <img src="../assets/img/Entrenador.jfif" alt="Entrenador">
-</section>
-
-<div class="seccion-encabezado">
-  <p class="subtitulo">
-    MÁS DE <span class="badge">+80 MIL</span> ESTUDIANTES
-  </p>
-  <h2 class="titulo-principal">
-    Impulsa tu carrera 
-    con los mejores cursos
-  </h2>
-</div>
-
-     <div class="Form">
-    <h1>Cursos destacados
-    </h1>
-
-
-
-    </div>
-
-    <!-- Se usa container o container-fluid con overflow-hidden para evitar scroll lateral -->
-<div class="container-fluid overflow-hidden px-3">
-    <div class="row g-3">
-
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="curso-card">
-                <div class="curso-header">
-                    <img src="../assets/img/marcelino.jpg" alt="Técnica Individual" class="curso-img">
-                    <span class="badge-populared">MÁS POPULAR</span>
-                    <span class="badge-categoria">
-                      <i class="bi bi-dribbble"></i> Entrenador
-                    </span>
-                </div>
-
-                <div class="curso-body">
-                    <div class="curso-rating">
-                        <span class="estrella">★</span>
-                        <strong>4.9</strong>
-                        <span class="reseñas">(153 reseñas)</span>
-                    </div>
-
-                    <h5 class="curso-titulo">Certificación Profesional en Dirección Técnica y Gestión de Equipos de Fútbol</h5>
-
-                    <ul class="curso-info">
-                        <li>
-                          <i class="bi bi-layers"></i> Duracion: 6 meses  
-                        </li>
-                        <li>
-                          <i class="bi bi-person-badge"></i> Modalidad: Presencial
-                        </li>
-                    </ul>
-
-                    <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
-                </div>
-            </div>
+      <section class="cartel">
+        <div class="cartel-contenido">
+          <h1>
+            <span class="letra-grande">A</span>PRENDE DE LOS
+            <span class="letra-grande">M</span>EJORES.
+          </h1>
+          <p>Lleva tu conocimiento al siguiente nivel.</p>
         </div>
+        <img src="/assets/img/Entrenador.jfif" alt="Entrenador" />
+      </section>
 
-        <!-- Tarjeta 2 -->
+      <div class="seccion-encabezado">
+        <p class="subtitulo">MÁS DE +80 MIL ESTUDIANTES</p>
+        <h2 class="titulo-principal">
+          Impulsa tu carrera con los mejores cursos
+        </h2>
+      </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
+      <div class="Form">
+        <h1>Cursos destacados</h1>
+      </div>
+
+      <!-- Se usa container o container-fluid con overflow-hidden para evitar scroll lateral -->
+      <div class="container-fluid overflow-hidden px-3">
+        <div class="row g-3">
+          <!-- Tarjeta 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="curso-card">
-                <div class="curso-header">
-                    <img src="../assets/img/entrenadorhocket.jpg" alt="Técnica Individual" class="curso-img">
-                    <span class="badge-populared">MÁS POPULAR</span>
-                    <span class="badge-categoria">
-                      <i class="bi bi-dribbble"></i> Ayudante
-                    </span>
+              <div class="curso-header">
+                <img
+                  src="/assets/img/marcelino.jpg"
+                  alt="Técnica Individual"
+                  class="curso-img"
+                />
+                <span class="badge-populared">MÁS POPULAR</span>
+                <span class="badge-categoria">
+                  <i class="bi bi-dribbble"></i> Entrenador
+                </span>
+              </div>
+
+              <div class="curso-body">
+                <div class="curso-rating">
+                  <span class="estrella">★</span>
+                  <strong>4.9</strong>
+                  <span class="reseñas">(153 reseñas)</span>
                 </div>
 
-                <div class="curso-body">
-                    <div class="curso-rating">
-                        <span class="estrella">★</span>
-                        <strong>4.8</strong>
-                        <span class="reseñas">(70 reseñas)</span>
-                    </div>
+                <h5 class="curso-titulo">
+                  Certificación Profesional en Dirección Técnica y Gestión de
+                  Equipos de Fútbol
+                </h5>
 
-                    <h5 class="curso-titulo">Certificación Superior en Entrenamiento Táctico y Metodología en Hockey</h5>
+                <ul class="curso-info">
+                  <li><i class="bi bi-layers"></i> Duracion: 6 meses</li>
+                  <li>
+                    <i class="bi bi-person-badge"></i> Modalidad: Presencial
+                  </li>
+                </ul>
 
-                    <ul class="curso-info">
-                        <li>
-                          <i class="bi bi-layers"></i> Duracion: 6 meses
-                        </li>
-                        <li>
-                          <i class="bi bi-person-badge"></i> Modalidad: Presencial
-                        </li>
-                    </ul>
-
-                    <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
-                </div>
+                <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
+              </div>
             </div>
-        </div>
+          </div>
 
-        
-
-        <!-- Tarjeta 3 -->
+          <!-- Tarjeta 2 -->
 
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="curso-card">
-                <div class="curso-header">
-                    <img src="../assets/img/6-1.jpg" alt="Técnica Individual" class="curso-img">
-                    <span class="badge-populared">MÁS POPULAR</span>
-                    <span class="badge-categoria">
-                      <i class="bi bi-dribbble"></i> Ayudante
-                    </span>
+              <div class="curso-header">
+                <img
+                  src="../assets/img/entrenadorhocket.jpg"
+                  alt="Técnica Individual"
+                  class="curso-img"
+                />
+                <span class="badge-populared">MÁS POPULAR</span>
+                <span class="badge-categoria">
+                  <i class="bi bi-dribbble"></i> Ayudante
+                </span>
+              </div>
+
+              <div class="curso-body">
+                <div class="curso-rating">
+                  <span class="estrella">★</span>
+                  <strong>4.8</strong>
+                  <span class="reseñas">(70 reseñas)</span>
                 </div>
 
-                <div class="curso-body">
-                    <div class="curso-rating">
-                        <span class="estrella">★</span>
-                        <strong>4.6</strong>
-                        <span class="reseñas">(95 reseñas)</span>
-                    </div>
+                <h5 class="curso-titulo">
+                  Certificación Superior en Entrenamiento Táctico y Metodología
+                  en Hockey
+                </h5>
 
-                    <h5 class="curso-titulo">Diplomatura en Video Análisis, Scouting y Métricas de Rendimiento</h5>
+                <ul class="curso-info">
+                  <li><i class="bi bi-layers"></i> Duracion: 6 meses</li>
+                  <li>
+                    <i class="bi bi-person-badge"></i> Modalidad: Presencial
+                  </li>
+                </ul>
 
-                    <ul class="curso-info">
-                        <li>
-                          <i class="bi bi-layers"></i> Duracion: 3 meses
-                        </li>
-                        <li>
-                          <i class="bi bi-person-badge"></i> Modalidad: Presencial
-                        </li>
-                    </ul>
-
-                    <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
-                </div>
-
-                
+                <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
+              </div>
             </div>
-        </div>
-        
-          <!-- Tarjeta 4 -->
-        <div class="col-12 col-sm-6 col-lg-3">
+          </div>
+
+          <!-- Tarjeta 3 -->
+
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="curso-card">
-                <div class="curso-header">
-                    <img src="../assets/img/entrenadornino.avif" alt="Técnica Individual" class="curso-img">
-                    <span class="badge-populared">MÁS POPULAR</span>
-                    <span class="badge-categoria">
-                      <i class="bi bi-dribbble"></i> Ayudante
-                    </span>
+              <div class="curso-header">
+                <img
+                  src="../assets/img/6-1.jpg"
+                  alt="Técnica Individual"
+                  class="curso-img"
+                />
+                <span class="badge-populared">MÁS POPULAR</span>
+                <span class="badge-categoria">
+                  <i class="bi bi-dribbble"></i> Ayudante
+                </span>
+              </div>
+
+              <div class="curso-body">
+                <div class="curso-rating">
+                  <span class="estrella">★</span>
+                  <strong>4.6</strong>
+                  <span class="reseñas">(95 reseñas)</span>
                 </div>
 
-                <div class="curso-body">
-                    <div class="curso-rating">
-                        <span class="estrella">★</span>
-                        <strong>4.6</strong>
-                        <span class="reseñas">(75 reseñas)</span>
-                    </div>
+                <h5 class="curso-titulo">
+                  Diplomatura en Video Análisis, Scouting y Métricas de
+                  Rendimiento
+                </h5>
 
-                    <h5 class="curso-titulo">Pedagogía profesional y Formación Técnica en Etapas Infantiles</h5>
+                <ul class="curso-info">
+                  <li><i class="bi bi-layers"></i> Duracion: 3 meses</li>
+                  <li>
+                    <i class="bi bi-person-badge"></i> Modalidad: Presencial
+                  </li>
+                </ul>
 
-                    <ul class="curso-info">
-                        <li>
-                          <i class="bi bi-layers"></i> Duracion: 2 meses
-                        </li>
-                        <li>
-                          <i class="bi bi-person-badge"></i> Modalidad: Presencial
-                        </li>
-                    </ul>
-
-                    <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
-                </div>
+                <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
+              </div>
             </div>
-        </div>
-
-        
-
-    </div>
-</div>
-
-<div class="cursos-header">
-  <h1 class="cursos-title">Cursos destacados</h1>
-  
-  <a href="/pages/error404.html" class="btn-cursos">
-    <span>Ver todos los cursos disponibles</span>
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="5" y1="12" x2="19" y2="12"></line>
-      <polyline points="12 5 19 12 12 19"></polyline>
-    </svg>
-  </a>
-</div>
-
-<section class="banner-container">
-  <!-- Columna Izquierda: Información de Capacitación Técnica -->
-  <div class="banner-info">
-    <h2 class="banner-title">Especialízate en Dirección Técnica y Videoanálisis</h2>
-    <p class="banner-description">
-      Lleva tu carrera táctica al siguiente nivel. Aprende metodología de entrenamiento, scouting y análisis de rendimiento con herramientas profesionales y la experiencia de entrenadores de élite.
-    </p>
-
-    <!-- Grilla de Beneficios / Áreas de Estudio -->
-    <div class="banner-features">
-      <div class="feature-item">
-        <span class="feature-icon">⚽</span>
-        <span>Licencia y Metodología de DT</span>
-      </div>
-      <div class="feature-item">
-        <span class="feature-icon">💻</span>
-        <span>Software de Videoanálisis y Scouting</span>
-      </div>
-      <div class="feature-item">
-        <span class="feature-icon">📋</span>
-        <span>Diseño de Tácticas y Estrategias</span>
-      </div>
-      <div class="feature-item">
-        <span class="feature-icon">📊</span>
-        <span>Análisis de Datos y Rendimiento</span>
-      </div>
-    </div>
-
-    <!-- Botón de Acción y Promoción -->
-    <div class="banner-action">
-      <a href="/pages/error404.html" class="btn-primary">Ver Cursos Disponibles</a>
-      <span class="price-tag">Certificación oficial al finalizar</span>
-    </div>
-  </div>
-
-  <!-- Columna Derecha: Galería / Bento Grid -->
-  <div class="banner-gallery">
-    <!-- Tarjeta 1: Pizarra / Planificación Táctica en Fútbol -->
-    <div class="card card-tall">
-      <img src="/assets/img/ninoentrenando.jfif" alt="Planificación táctica de fútbol">
-    </div>
-
-    <!-- Tarjeta 2: Entrenador / Director Técnico en Cancha -->
-    <div class="card card-person">
-      <img src="/assets/img/jockeyninas.jpg" alt="Director Técnico dirigiendo partido">
-    </div>
-
-    <!-- Tarjeta 3: Equipamiento de Hockey / Entrenamiento -->
-    <div class="card card-small-top">
-      <img src="/assets/img/tecnicopiza.jfif" alt="Jugadora de Hockey con palo y bocha">
-    </div>
-
-    <!-- Tarjeta 4: Videoanálisis / Trabajo con Laptop -->
-    <div class="card card-small-bottom">
-      <img src="/assets/img/campera puma hov.webp" alt="Análisis de rendimiento deportivo">
-    </div>
-  </div>
-</section>
-
-<section class="certificaciones-section">
-  <!-- Encabezado de la Sección -->
-  <div class="certificaciones-header">
-    <h2>Obtené tu Certificación</h2>
-    <p>Completá cursos, superá las evaluaciones oficiales y construí tu perfil profesional verificado dentro del ecosistema SportAr con validación criptográfica y código QR único.</p>
-  </div>
-
-  <!-- Grilla de Tarjetas -->
-  <div class="certificaciones-grid">
-    
-    <!-- Tarjeta 1 -->
-    <div class="certi-card">
-      <div class="certi-card-top">
-        <div class="certi-icon">
-          <!-- Icono Medal / Badge -->
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00567a" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-        </div>
-        <span class="certi-sub">SPORTAR ACADEMY</span>
-        <h3 class="certi-title">Diploma Oficial</h3>
-        <span class="certi-badge badge-blue">NIVEL ATLETA PRO</span>
-      </div>
-      <div class="certi-card-body">
-        <h4>Certificado de Técnica Individual y Biomecánica</h4>
-        <p>Acredita dominio de fundamentos, gestos con el palo en velocidad y ejecución sin balance comprometido.</p>
-      </div>
-      <div class="certi-card-footer">
-        <span>Evaluación 100% online</span>
-        <strong>Carga: 30 hs</strong>
-      </div>
-    </div>
-
-    <!-- Tarjeta 2 -->
-    <div class="certi-card">
-      <div class="certi-card-top">
-        <div class="certi-icon">
-          <!-- Icono Check Badge -->
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00567a" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <span class="certi-sub">SPORTAR ACADEMY</span>
-        <h3 class="certi-title">Diploma Oficial</h3>
-        <span class="certi-badge badge-blue">NIVEL COACH NACIONAL</span>
-      </div>
-      <div class="certi-card-body">
-        <h4>Certificado de Planificación Deportiva para Entrenadores</h4>
-        <p>Acredita capacidades metodológicas para el armado de pretemporada, mesociclos y gestión táctica.</p>
-      </div>
-      <div class="certi-card-footer">
-        <span>Tesina y proyecto aplicado</span>
-        <strong>Carga: 60 hs</strong>
-      </div>
-    </div>
-
-    <!-- Tarjeta 3 -->
-    <div class="certi-card">
-      <div class="certi-card-top">
-        <div class="certi-icon">
-          <!-- Icono Mazo / Arbitraje -->
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c05621" stroke-width="2"><path d="m13 2 9 9-4 4-9-9z"/><path d="M10 5 2 13l4 4 8-8"/><path d="m15 9 2 2"/></svg>
-        </div>
-        <span class="certi-sub">SPORTAR ACADEMY</span>
-        <h3 class="certi-title">Diploma Oficial</h3>
-        <span class="certi-badge badge-orange">ESTÁNDAR FIH</span>
-      </div>
-      <div class="certi-card-body">
-        <h4>Certificación Oficial de Reglamento y Arbitraje de Campo</h4>
-        <p>Validación de criterio, gestualidad reglamentaria y aptitud para dirección de partidos competitivos.</p>
-      </div>
-      <div class="certi-card-footer">
-        <span>Examen teórico y video-test</span>
-        <strong>Carga: 45 hs</strong>
-      </div>
-    </div>
-
-  </div>
-</section>
-  
-<section class="seccion-gratuitos">
-  <div class="container-fluid overflow-hidden px-3">
-    
-    <div class="encabezado-gratuitos text-center mb-4">
-      <p class="subtitulo-gratuitos">FORMACIÓN ACCESIBLE</p>
-      <h3 class="titulo-gratuitos">Cursos Gratuitos en Modalidad Virtual</h3>
-    </div>
-
-    <div class="row g-3">
-
-      <!-- Tarjeta Gratuita 1 -->
-      <div class="col-12 col-md-4">
-        <div class="card-gratuita">
-          <div class="badges-gratuita">
-            <span class="badge-gratis">100% GRATIS</span>
-            <span class="badge-modalidad">VIRTUAL</span>
           </div>
-          <h5 class="titulo-card-gratuita">Iniciación Deportiva y Metodología del Fútbol Infantil</h5>
-          <p class="texto-card-gratuita">
-            Estrategias pedagógicas, desarrollo motriz y herramientas prácticas para la enseñanza en etapas formativas.
-          </p>
-          <a href="/pages/error404.html" class="btn-gratuito">Acceder Gratis</a>
-        </div>
-      </div>
 
-      <!-- Tarjeta Gratuita 2 -->
-      <div class="col-12 col-md-4">
-        <div class="card-gratuita">
-          <div class="badges-gratuita">
-            <span class="badge-gratis">100% GRATIS</span>
-            <span class="badge-modalidad">VIRTUAL</span>
+          <!-- Tarjeta 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="curso-card">
+              <div class="curso-header">
+                <img
+                  src="../assets/img/entrenadornino.avif"
+                  alt="Técnica Individual"
+                  class="curso-img"
+                />
+                <span class="badge-populared">MÁS POPULAR</span>
+                <span class="badge-categoria">
+                  <i class="bi bi-dribbble"></i> Ayudante
+                </span>
+              </div>
+
+              <div class="curso-body">
+                <div class="curso-rating">
+                  <span class="estrella">★</span>
+                  <strong>4.6</strong>
+                  <span class="reseñas">(75 reseñas)</span>
+                </div>
+
+                <h5 class="curso-titulo">
+                  Pedagogía profesional y Formación Técnica en Etapas Infantiles
+                </h5>
+
+                <ul class="curso-info">
+                  <li><i class="bi bi-layers"></i> Duracion: 2 meses</li>
+                  <li>
+                    <i class="bi bi-person-badge"></i> Modalidad: Presencial
+                  </li>
+                </ul>
+
+                <a href="/pages/error404.html" class="btn-curso">VER CURSO</a>
+              </div>
+            </div>
           </div>
-          <h5 class="titulo-card-gratuita">Introducción al Video Análisis y Scouting</h5>
-          <p class="texto-card-gratuita">
-            Fundamentos básicos para el análisis táctico, corte de video y seguimiento de rendimiento deportivo.
-          </p>
-          <a href="/pages/error404.html" class="btn-gratuito">Acceder Gratis</a>
         </div>
       </div>
 
-      <!-- Tarjeta Gratuita 3 -->
-      <div class="col-12 col-md-4">
-        <div class="card-gratuita">
-          <div class="badges-gratuita">
-            <span class="badge-gratis">100% GRATIS</span>
-            <span class="badge-modalidad">VIRTUAL</span>
+      <div class="cursos-header">
+        <a href="/pages/error404.html" class="btn-cursos">
+          <span>Ver todos los cursos disponibles</span>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <section class="banner-container">
+        <!-- Columna Izquierda: Información de Capacitación Técnica -->
+        <div class="banner-info">
+          <h2 class="banner-title">
+            Especialízate en Dirección Técnica y Videoanálisis
+          </h2>
+          <p class="banner-description">
+            Lleva tu carrera táctica al siguiente nivel. Aprende metodología de
+            entrenamiento, scouting y análisis de rendimiento con herramientas
+            profesionales y la experiencia de entrenadores de élite.
+          </p>
+
+          <!-- Grilla de Beneficios / Áreas de Estudio -->
+          <div class="banner-features">
+            <div class="feature-item">
+              <span class="feature-icon">⚽</span>
+              <span>Licencia y Metodología de DT</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">💻</span>
+              <span>Software de Videoanálisis y Scouting</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">📋</span>
+              <span>Diseño de Tácticas y Estrategias</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">📊</span>
+              <span>Análisis de Datos y Rendimiento</span>
+            </div>
           </div>
-          <h5 class="titulo-card-gratuita">Rol del Asistente Técnico y Gestión de Grupo</h5>
-          <p class="texto-card-gratuita">
-            Conceptos clave sobre la organización del cuerpo técnico y la comunicación efectiva con el plantel.
+
+          <!-- Botón de Acción y Promoción -->
+          <div class="banner-action">
+            <a href="/pages/error404.html" class="btn-primary"
+              >Ver Cursos Disponibles</a
+            >
+            <span class="price-tag">Certificación oficial al finalizar</span>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Galería / Bento Grid -->
+        <div class="banner-gallery">
+          <!-- Tarjeta 1: Pizarra / Planificación Táctica en Fútbol -->
+          <div class="card card-tall">
+            <img
+              src="/assets/img/ninoentrenando.jfif"
+              alt="Planificación táctica de fútbol"
+            />
+          </div>
+
+          <!-- Tarjeta 2: Entrenador / Director Técnico en Cancha -->
+          <div class="card card-person">
+            <img
+              src="/assets/img/jockeyninas.jpg"
+              alt="Director Técnico dirigiendo partido"
+            />
+          </div>
+
+          <!-- Tarjeta 3: Equipamiento de Hockey / Entrenamiento -->
+          <div class="card card-small-top">
+            <img
+              src="/assets/img/tecnicopiza.jfif"
+              alt="Jugadora de Hockey con palo y bocha"
+            />
+          </div>
+
+          <!-- Tarjeta 4: Videoanálisis / Trabajo con Laptop -->
+          <div class="card card-small-bottom">
+            <img
+              src="/assets/img/campera puma hov.webp"
+              alt="Análisis de rendimiento deportivo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="certificaciones-section">
+        <!-- Encabezado de la Sección -->
+        <div class="certificaciones-header">
+          <h2>Obtené tu Certificación</h2>
+          <p>
+            Completá cursos, superá las evaluaciones oficiales y construí tu
+            perfil profesional verificado dentro del ecosistema SportAr con
+            validación criptográfica y código QR único.
           </p>
-          <a href="/pages/error404.html" class="btn-gratuito">Acceder Gratis</a>
         </div>
-      </div>
 
-    </div>
-  </div>
-</section>
+        <!-- Grilla de Tarjetas -->
+        <div class="certificaciones-grid">
+          <!-- Tarjeta 1 -->
+          <div class="certi-card">
+            <div class="certi-card-top">
+              <div class="certi-icon">
+                <!-- Icono Medal / Badge -->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#00567a"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <span class="certi-sub">SPORTAR ACADEMY</span>
+              <h3 class="certi-title">Diploma Oficial</h3>
+              <span class="certi-badge badge-blue">NIVEL ATLETA PRO</span>
+            </div>
+            <div class="certi-card-body">
+              <h4>Certificado de Técnica Individual y Biomecánica</h4>
+              <p>
+                Acredita dominio de fundamentos, gestos con el palo en velocidad
+                y ejecución sin balance comprometido.
+              </p>
+            </div>
+            <div class="certi-card-footer">
+              <span>Evaluación 100% online</span>
+              <strong>Carga: 30 hs</strong>
+            </div>
+          </div>
 
-<section class="container my-5">
-  <h2 class="text-center mb-4 fw-bold">Preguntas Frecuentes</h2>
+          <!-- Tarjeta 2 -->
+          <div class="certi-card">
+            <div class="certi-card-top">
+              <div class="certi-icon">
+                <!-- Icono Check Badge -->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#00567a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <span class="certi-sub">SPORTAR ACADEMY</span>
+              <h3 class="certi-title">Diploma Oficial</h3>
+              <span class="certi-badge badge-blue">NIVEL COACH NACIONAL</span>
+            </div>
+            <div class="certi-card-body">
+              <h4>Certificado de Planificación Deportiva para Entrenadores</h4>
+              <p>
+                Acredita capacidades metodológicas para el armado de
+                pretemporada, mesociclos y gestión táctica.
+              </p>
+            </div>
+            <div class="certi-card-footer">
+              <span>Tesina y proyecto aplicado</span>
+              <strong>Carga: 60 hs</strong>
+            </div>
+          </div>
 
-  <div class="accordion accordion-flush" id="accordionFlushExample">
-    
-    <!-- Pregunta 1 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          ¿Qué requisitos necesito para realizar los cursos de Dirección Técnica o Videoanálisis?
-        </button>
-      </h2>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-          No necesitas experiencia previa ni titulaciones anteriores. Todos nuestros cursos inician desde los conceptos fundamentales y van avanzando de manera progresiva hacia el dominio de herramientas de nivel profesional.
+          <!-- Tarjeta 3 -->
+          <div class="certi-card">
+            <div class="certi-card-top">
+              <div class="certi-icon">
+                <!-- Icono Mazo / Arbitraje -->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#c05621"
+                  stroke-width="2"
+                >
+                  <path d="m13 2 9 9-4 4-9-9z" />
+                  <path d="M10 5 2 13l4 4 8-8" />
+                  <path d="m15 9 2 2" />
+                </svg>
+              </div>
+              <span class="certi-sub">SPORTAR ACADEMY</span>
+              <h3 class="certi-title">Diploma Oficial</h3>
+              <span class="certi-badge badge-orange">ESTÁNDAR FIH</span>
+            </div>
+            <div class="certi-card-body">
+              <h4>Certificación Oficial de Reglamento y Arbitraje de Campo</h4>
+              <p>
+                Validación de criterio, gestualidad reglamentaria y aptitud para
+                dirección de partidos competitivos.
+              </p>
+            </div>
+            <div class="certi-card-footer">
+              <span>Examen teórico y video-test</span>
+              <strong>Carga: 45 hs</strong>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Pregunta 2 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          ¿Las clases son en vivo o grabadas?
-        </button>
-      </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-          Contamos con una modalidad 100% flexible. Las clases teóricas y los módulos prácticos están grabados en alta definición para que estudies a tu ritmo, junto con sesiones semanales de tutoría en vivo para resolver dudas.
+      <section class="seccion-gratuitos">
+        <div class="container-fluid overflow-hidden px-3">
+          <div class="encabezado-gratuitos text-center mb-4">
+            <p class="subtitulo-gratuitos">FORMACIÓN ACCESIBLE</p>
+            <h3 class="titulo-gratuitos">
+              Cursos Gratuitos en Modalidad Virtual
+            </h3>
+          </div>
+
+          <div class="row g-3">
+            <!-- Tarjeta Gratuita 1 -->
+            <div class="col-12 col-md-4">
+              <div class="card-gratuita">
+                <div class="badges-gratuita">
+                  <span class="badge-gratis">100% GRATIS</span>
+                  <span class="badge-modalidad">VIRTUAL</span>
+                </div>
+                <h5 class="titulo-card-gratuita">
+                  Iniciación Deportiva y Metodología del Fútbol Infantil
+                </h5>
+                <p class="texto-card-gratuita">
+                  Estrategias pedagógicas, desarrollo motriz y herramientas
+                  prácticas para la enseñanza en etapas formativas.
+                </p>
+                <a href="/pages/error404.html" class="btn-gratuito"
+                  >Acceder Gratis</a
+                >
+              </div>
+            </div>
+
+            <!-- Tarjeta Gratuita 2 -->
+            <div class="col-12 col-md-4">
+              <div class="card-gratuita">
+                <div class="badges-gratuita">
+                  <span class="badge-gratis">100% GRATIS</span>
+                  <span class="badge-modalidad">VIRTUAL</span>
+                </div>
+                <h5 class="titulo-card-gratuita">
+                  Introducción al Video Análisis y Scouting
+                </h5>
+                <p class="texto-card-gratuita">
+                  Fundamentos básicos para el análisis táctico, corte de video y
+                  seguimiento de rendimiento deportivo.
+                </p>
+                <a href="/pages/error404.html" class="btn-gratuito"
+                  >Acceder Gratis</a
+                >
+              </div>
+            </div>
+
+            <!-- Tarjeta Gratuita 3 -->
+            <div class="col-12 col-md-4">
+              <div class="card-gratuita">
+                <div class="badges-gratuita">
+                  <span class="badge-gratis">100% GRATIS</span>
+                  <span class="badge-modalidad">VIRTUAL</span>
+                </div>
+                <h5 class="titulo-card-gratuita">
+                  Rol del Asistente Técnico y Gestión de Grupo
+                </h5>
+                <p class="texto-card-gratuita">
+                  Conceptos clave sobre la organización del cuerpo técnico y la
+                  comunicación efectiva con el plantel.
+                </p>
+                <a href="/pages/error404.html" class="btn-gratuito"
+                  >Acceder Gratis</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Pregunta 3 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          ¿Qué software de videoanálisis aprenderé a utilizar?
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-          Trabajamos con los programas estándar de la industria como LongoMatch, NACSport y Kinovea, enseñándote a realizar cortes de partido, etiquetado de jugadas e informes tácticos.
+      <section class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Preguntas Frecuentes</h2>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Pregunta 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                ¿Qué requisitos necesito para realizar los cursos de Dirección
+                Técnica o Videoanálisis?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                No necesitas experiencia previa ni titulaciones anteriores.
+                Todos nuestros cursos inician desde los conceptos fundamentales
+                y van avanzando de manera progresiva hacia el dominio de
+                herramientas de nivel profesional.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                ¿Las clases son en vivo o grabadas?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Contamos con una modalidad 100% flexible. Las clases teóricas y
+                los módulos prácticos están grabados en alta definición para que
+                estudies a tu ritmo, junto con sesiones semanales de tutoría en
+                vivo para resolver dudas.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                ¿Qué software de videoanálisis aprenderé a utilizar?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Trabajamos con los programas estándar de la industria como
+                LongoMatch, NACSport y Kinovea, enseñándote a realizar cortes de
+                partido, etiquetado de jugadas e informes tácticos.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                ¿Entregan certificación oficial al finalizar los cursos?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Sí, al aprobar el proyecto práctico final del curso recibirás
+                una certificación digital descargable que valida tus
+                competencias en metodología táctica y análisis de rendimiento.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                ¿Cuáles son los medios de pago disponibles?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Aceptamos tarjetas de crédito, débito, transferencias bancarias
+                y plataformas de pago internacionales. También ofrecemos planes
+                de cuotas sin interés según tu país.
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!-- Pregunta 4 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-          ¿Entregan certificación oficial al finalizar los cursos?
-        </button>
-      </h2>
-      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-          Sí, al aprobar el proyecto práctico final del curso recibirás una certificación digital descargable que valida tus competencias en metodología táctica y análisis de rendimiento.
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 5 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-          ¿Cuáles son los medios de pago disponibles?
-        </button>
-      </h2>
-      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-          Aceptamos tarjetas de crédito, débito, transferencias bancarias y plataformas de pago internacionales. También ofrecemos planes de cuotas sin interés según tu país.
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <footer class="footer">
+    <footer class="footer">
       <div class="contFooter">
         <div class="footer-row">
           <div class="footer-links">
             <h4>Compañia</h4>
             <ul>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Nuestros servicios</a></li>
-              <li><a href="#">Politica de privacidad</a></li>
-              <li><a href="#">Afiliate</a></li>
+              <li><a href="/pages/aboutUs.html">Nosotros</a></li>
+              <li><a href="/pages/error404.html">Nuestros servicios</a></li>
+              <li><a href="/pages/error404.html">Politica de privacidad</a></li>
+              <li><a href="/pages/register.html">Afiliate</a></li>
             </ul>
           </div>
 
           <div class="footer-links">
             <h4>Ayuda</h4>
             <ul>
-              <li><a href="#">Preguntas</a></li>
-              <li><a href="#">Compras</a></li>
-              <li><a href="#">Envios</a></li>
-              <li><a href="#">Pago</a></li>
+              <li><a href="/pages/error404.html">Preguntas</a></li>
+              <li><a href="/pages/error404.html">Compras</a></li>
+              <li><a href="/pages/error404.html">Envios</a></li>
+              <li><a href="/pages/error404.html">Pago</a></li>
             </ul>
           </div>
 
           <div class="footer-links">
             <h4>Tienda</h4>
             <ul>
-              <li><a href="#">Ropa</a></li>
-              <li><a href="#">Zapatos</a></li>
-              <li><a href="#">Telefonos</a></li>
-              <li><a href="#">Pantallas</a></li>
+              <li><a href="/pages/error404.html">Indumentaria</a></li>
+              <li><a href="/pages/error404.html">Zapatillas</a></li>
+              <li><a href="/pages/error404.html">Accesorios</a></li>
+              <li><a href="/pages/error404.html">Materiales</a></li>
             </ul>
           </div>
 
           <div class="footer-links">
             <h4>Siguenos</h4>
             <div class="socialink">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="/pages/error404.html"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="/pages/error404.html"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/pages/error404.html"><i class="fab fa-twitter"></i></a>
+              <a href="/pages/error404.html"><i class="fab fa-linkedin"></i></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
