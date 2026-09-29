@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deport AR</title>
+        <link rel="icon" type="image/png" href="/assets/img/logoNewWhite.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/detailTraining.css">
+</head>
+<body>
+    <!-- Navbar -->
+     <nav>
+      <div class="upNavbar">
+        <!-- NUEVO: botón hamburguesa (solo visible en celular/tablet) -->
+        <button
+          class="hamburger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-label="Abrir menú"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <!-- Fin de botón hamburguesa -->
+
+        <a href="/index.html">
+          <img src="/assets/img/logoNewWhite.jpg" alt="logo" />
+        </a>
+        <div class="search">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </span>
+          <input
+            type="text"
+            placeholder="   Buscar productos, cursos o eventos"
+          />
+        </div>
+        <div class="login">
+          <a href="/pages/login.html">
+            <button class="register1">Iniciar Sesión</button>
+          </a>
+          <a href="/pages/register.html">
+            <button class="register2">Crear Cuenta</button>
+          </a>
+        </div>
+
+        <div class="cart">
+          <a href="/pages/cart.html">
+            <button class="buttonCart">
+              <!-- <span>Carrito</span> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="downNavbar">
+        <div class="menu">
+          <a href="/index.html">
+            <button>INICIO</button>
+          </a>
+          <a href="/pages/category.html">
+            <button>CATEGORIAS</button>
+          </a>
+          <a href="/pages/product.html">
+            <button>EQUIPAMIENTO</button>
+          </a>
+          <a href="/pages/training.html">
+            <button>FORMACION</button>
+          </a>
+          <a href="/pages/events.html">
+            <button>EVENTOS</button>
+          </a>
+        </div>
+        <div class="menu2">
+          <a href="/pages/aboutUs.html">Nosotros</a>
+          <a href="/pages/contact.html">Contacto</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin Navbar -->
+<main>
+<div class="curso-card">
+  <!-- LADO IZQUIERDO: Imagen -->
+  <div class="curso-imagen">
+    <img src="/assets/img/marcelino.jpg" alt="Dirección Técnica y Gestión de Equipos de Fútbol">
+  </div>
+
+  <!-- LADO DERECHO: Información completa -->
+  <div class="curso-contenido">
+    
+    <!-- Bloque Superior: Título, Autores y Fecha -->
+    <div class="curso-header">
+      <h2 class="curso-titulo">Dirección Técnica y Gestión de Equipos de Fútbol</h2>
+      
+      <p class="curso-meta">
+        Creado por <a href="/pages/error404.html" class="autor-link">Baena Fernando</a>, <a href="/pages/aboutUs.html" class="autor-link">Dev Code Ar</a>
+      </p>
+      
+      <p class="curso-fecha">
+        <i class="far fa-calendar-alt"></i> Última actualización: 6/2026
+      </p>
+    </div>
+
+    <!-- Bloque Medio: Descripción acomodada -->
+    <p class="curso-descripcion">
+      Dominá la lectura del partido en tiempo real. Aprendé a diseñar variantes ofensivas y defensivas, explotar las debilidades del rival y estructurar la estrategia a balón parado para potenciar el rendimiento de tu equipo.
+    </p>
+
+    <!-- Bloque Inferior: Precio y Botones de Acción -->
+    <div class="curso-footer">
+      <div class="precio-container">
+        <span class="precio">$25.000 ARS</span>
+      </div>
+
+      <div class="acciones-container">
+        <a href="/pages/cart.html" class="btn-carrito">
+          <i class="fas fa-shopping-cart"></i> Agregar al carrito
+        </a>
+        <a href="/pages/error404.html" class="btn-inscribirme">Inscribirme ahora</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="descarga-simple-container">
+  <a href="/pages/error404.html" download class="btn-descargar-simple">
+    <i class="fas fa-file-download"></i> Descargar programa completo (PDF)
+  </a>
+</div>
+
+<section class="aprenderas-seccion">
+  <h2 class="seccion-titulo">Lo que aprenderás en este curso</h2>
+
+  <div class="aprenderas-grid">
+    
+    <!-- TARJETA 1 -->
+    <div class="aprenderas-card">
+      <div class="card-header-top">
+        <div class="icon-circle">
+          <i class="fas fa-chess"></i>
+        </div>
+        <span class="academy-brand">Deport Ar Academy</span>
+        <h4 class="badge-title">Módulo Táctico</h4>
+        <span class="badge-tag tag-azul">Nivel Avanzado</span>
+      </div>
+      <div class="card-body-content">
+        <h3 class="card-title-main">Modelo de Juego y Variantes Ofensivas</h3>
+        <p class="card-desc">
+          Aprenderás a diseñar y estructurar la identidad táctica de tu equipo, automatizar salidas desde el fondo y crear sistemas de ataque adaptativos.
+        </p>
+      </div>
+      <div class="card-footer-info">
+        <span>Evaluación práctica</span>
+        <span class="carga-horaria">Carga: 20 hs</span>
+      </div>
+    </div>
+
+    <!-- TARJETA 2 -->
+    <div class="aprenderas-card">
+      <div class="card-header-top">
+        <div class="icon-circle">
+          <i class="fas fa-clipboard-list"></i>
+        </div>
+        <span class="academy-brand">Deport Ar Academy</span>
+        <h4 class="badge-title">Planificación</h4>
+        <span class="badge-tag tag-verde">Metodología Pro</span>
+      </div>
+      <div class="card-body-content">
+        <h3 class="card-title-main">Diseño de Microciclos y Pretemporadas</h3>
+        <p class="card-desc">
+          Planificación semanal de entrenamientos integrando la preparación física con el trabajo con pelota según la periodización táctica.
+        </p>
+      </div>
+      <div class="card-footer-info">
+        <span>Proyecto aplicado</span>
+        <span class="carga-horaria">Carga: 25 hs</span>
+      </div>
+    </div>
+
+    <!-- TARJETA 3 -->
+    <div class="aprenderas-card">
+      <div class="card-header-top">
+        <div class="icon-circle">
+          <i class="fas fa-users-cog"></i>
+        </div>
+        <span class="academy-brand">Deport Ar Academy</span>
+        <h4 class="badge-title">Liderazgo</h4>
+        <span class="badge-tag tag-naranja">Gestión de Campo</span>
+      </div>
+      <div class="card-body-content">
+        <h3 class="card-title-main">Gestión de Vestuario y Psicología Deportiva</h3>
+        <p class="card-desc">
+          Herramientas de comunicación efectiva, manejo de líderes en planteles profesionales y resolución de conflictos bajo alta presión.
+        </p>
+      </div>
+      <div class="card-footer-info">
+        <span>Casos de estudio</span>
+        <span class="carga-horaria">Carga: 15 hs</span>
+      </div>
+    </div>
+
+    <!-- TARJETA 4 -->
+    <div class="aprenderas-card">
+      <div class="card-header-top">
+        <div class="icon-circle">
+          <i class="fas fa-video"></i>
+        </div>
+        <span class="academy-brand">Deport Ar Academy</span>
+        <h4 class="badge-title">Scouting & Tech</h4>
+        <span class="badge-tag tag-morado">Análisis Digital</span>
+      </div>
+      <div class="card-body-content">
+        <h3 class="card-title-main">Videoanálisis y Software Táctico</h3>
+        <p class="card-desc">
+          Manejo de herramientas de recolección de datos y edición de video para el análisis de rivales y la corrección de errores propios.
+        </p>
+      </div>
+      <div class="card-footer-info">
+        <span>Taller con software</span>
+        <span class="carga-horaria">Carga: 30 hs</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    
+
+<h3 class="faq-titulo">Preguntas Frecuentes</h3>
+
+<section class="faq-seccion">
+  
+
+  <div class="faq-acordeon">
+    <!-- Pregunta 1 -->
+    <details class="faq-item">
+      <summary class="faq-pregunta">
+        <span>¿Cómo accedo al curso una vez realizado el pago?</span>
+        <i class="fas fa-chevron-down faq-icono"></i>
+      </summary>
+      <div class="faq-respuesta">
+        El acceso es inmediato y automático. Recibirás un correo electrónico con tus credenciales para ingresar a la plataforma y comenzar a ver los módulos a tu propio ritmo.
+      </div>
+    </details>
+
+    <!-- Pregunta 2 -->
+    <details class="faq-item">
+      <summary class="faq-pregunta">
+        <span>¿Las clases son en vivo o grabadas?</span>
+        <i class="fas fa-chevron-down faq-icono"></i>
+      </summary>
+      <div class="faq-respuesta">
+        El curso combina lecciones en video pregrabadas en alta definición para que estudies cuando quieras, junto con encuentros virtuales periódicos para resolver dudas en vivo.
+      </div>
+    </details>
+
+    <!-- Pregunta 3 -->
+    <details class="faq-item">
+      <summary class="faq-pregunta">
+        <span>¿Otorgan certificado al finalizar la cursada?</span>
+        <i class="fas fa-chevron-down faq-icono"></i>
+      </summary>
+      <div class="faq-respuesta">
+        Sí, al completar el 100% de las clases y aprobar el trabajo práctico final, se te emitirá un certificado digital firmado por Dev Codear con validación QR.
+      </div>
+    </details>
+
+    <!-- Pregunta 4 -->
+    <details class="faq-item">
+      <summary class="faq-pregunta">
+        <span>¿Cuáles son los medios de pago disponibles?</span>
+        <i class="fas fa-chevron-down faq-icono"></i>
+      </summary>
+      <div class="faq-respuesta">
+        Aceptamos tarjetas de crédito, débito, transferencia bancaria y Mercado Pago en Argentina, así como tarjetas internacionales a través de PayPal.
+      </div>
+    </details>
+  </div>
+</section>
+
+</main>
+    <!-- Footer -->
+    
+  <footer class="footer">
+      <div class="contFooter">
+        <div class="footer-row">
+          <div class="footer-links">
+            <h4>Compañia</h4>
+            <ul>
+              <li><a href="/pages/aboutUs.html">Nosotros</a></li>
+              <li><a href="/pages/error404.html">Nuestros servicios</a></li>
+              <li><a href="/pages/error404.html">Politica de privacidad</a></li>
+              <li><a href="/pages/register.html">Afiliate</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="/pages/error404.html">Preguntas</a></li>
+              <li><a href="/pages/error404.html">Compras</a></li>
+              <li><a href="/pages/error404.html">Envios</a></li>
+              <li><a href="/pages/error404.html">Pago</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tienda</h4>
+            <ul>
+              <li><a href="/pages/error404.html">Indumentaria</a></li>
+              <li><a href="/pages/error404.html">Zapatillas</a></li>
+              <li><a href="/pages/error404.html">Accesorios</a></li>
+              <li><a href="/pages/error404.html">Materiales</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Siguenos</h4>
+            <div class="socialink">
+              <a href="/pages/error404.html"><i class="fab fa-facebook-f"></i></a>
+              <a href="/pages/error404.html"><i class="fab fa-instagram"></i></a>
+              <a href="/pages/error404.html"><i class="fab fa-twitter"></i></a>
+              <a href="/pages/error404.html"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Fin footer -->
+
+</body>
+</html>
