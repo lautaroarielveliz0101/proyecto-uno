@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/formprod.css">
+</head>
+<body>
+    <!-- Nadvbar -->
+     <nav>
+      <div class="upNavbar">
+        <!-- NUEVO: botón hamburguesa (solo visible en celular/tablet) -->
+        <button
+          class="hamburger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-label="Abrir menú"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <!-- Fin de botón hamburguesa -->
+
+        <a href="/index.html">
+          <img src="/assets/img/logoNewWhite.jpg" alt="logo" />
+        </a>
+        <div class="search">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </span>
+          <input
+            type="text"
+            placeholder="   Buscar productos, cursos o eventos"
+          />
+        </div>
+        <div class="login">
+          <a href="/pages/login.html">
+            <button class="register1">Iniciar Sesión</button>
+          </a>
+          <a href="/pages/register.html">
+            <button class="register2">Crear Cuenta</button>
+          </a>
+        </div>
+
+        <div class="cart">
+          <a href="/pages/cart.html">
+            <button class="buttonCart">
+              <!-- <span>Carrito</span> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="downNavbar">
+        <div class="menu">
+          <a href="/index.html">
+            <button>INICIO</button>
+          </a>
+          <a href="/pages/category.html">
+            <button>CATEGORIAS</button>
+          </a>
+          <a href="/pages/product.html">
+            <button>EQUIPAMIENTO</button>
+          </a>
+          <a href="/pages/training.html">
+            <button>FORMACION</button>
+          </a>
+          <a href="/pages/events.html">
+            <button>EVENTOS</button>
+          </a>
+        </div>
+        <div class="menu2">
+          <a href="/pages/aboutUs.html">Nosotros</a>
+          <a href="/pages/contact.html">Contacto</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin Nadbar -->
+
+    <div class="card card-producto mb-3">
+  <div class="row g-0 h-100">
+    <!-- Columna izquierda: Imagen -->
+    <div class="col-md-5 col-lg-4 h-100">
+      <img src="/assets/img/sabellaentrenador.jfif" class="img-producto" alt="...">
+    </div>
+    
+    <!-- Columna derecha: Texto -->
+    <div class="col-md-7 col-lg-8 h-100 d-flex align-items-center">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="contFooter">
+        <div class="footer-row">
+          <div class="footer-links">
+            <h4>Compañia</h4>
+            <ul>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Nuestros servicios</a></li>
+              <li><a href="#">Politica de privacidad</a></li>
+              <li><a href="#">Afiliate</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">Preguntas</a></li>
+              <li><a href="#">Compras</a></li>
+              <li><a href="#">Envios</a></li>
+              <li><a href="#">Pago</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Tienda</h4>
+            <ul>
+              <li><a href="#">Ropa</a></li>
+              <li><a href="#">Zapatos</a></li>
+              <li><a href="#">Telefonos</a></li>
+              <li><a href="#">Pantallas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Siguenos</h4>
+            <div class="socialink">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fin footer -->
+
+</body>
+</html>

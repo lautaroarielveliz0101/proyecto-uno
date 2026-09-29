@@ -1,0 +1,83 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Contenedor principal de la tarjeta */
+.card-producto {
+  width: 90vw;            /* Ocupa el 90% del ancho de la pantalla */
+  height: 50vh;           /* Ocupa la mitad del alto de la pantalla */
+  margin: 0 auto;         /* Centrada horizontalmente */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: none;       /* Sin sombras */
+  transition: none;       /* Sin animaciones */
+}
+
+/* Desactivar cualquier efecto hover */
+.card-producto:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Imagen a la izquierda fijada al 100% de alto y ancho de su columna */
+.img-producto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Cubre todo el área de la columna sin deformarse */
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+ 
+.footer{
+  margin-top: 40px;
+  background-color: #24262b;
+  padding: 80px 0;
+
+}
+
+.contFooter{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-links{
+  width: 25%;
+  padding: 0 15px;
+
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  display: inline-block;
+}
+
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+  color: #ffffff;
+  padding-left: 6px;
+
+}
