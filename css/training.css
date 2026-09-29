@@ -1,4 +1,3 @@
-/* Reset global y prevención de scroll lateral */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -8,7 +7,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Importación opcional de Bootstrap Icons si querés usar los íconos */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .curso-card {
@@ -45,7 +43,7 @@ html, body {
   position: absolute;
   top: 14px;
   left: 14px;
-  background-color: #c43e00; /* Naranja rojizo */
+  background-color: #c43e00;
   color: #ffffff;
   font-size: 0.75rem;
   font-weight: 800;
@@ -87,7 +85,7 @@ html, body {
 }
 
 .curso-rating .estrella {
-  color: #d96b00; /* Naranja/Dorado estrella */
+  color: #d96b00; 
   font-size: 1.1rem;
 }
 
@@ -109,7 +107,7 @@ html, body {
   margin-bottom: 1rem;
 }
 
-/* Detalles (módulos y coach) */
+ 
 .curso-info {
   list-style: none;
   padding: 0;
@@ -130,7 +128,7 @@ html, body {
 /* Botón VER CURSO */
 .btn-curso {
   margin-top: auto;
-  background-color: #00567a; /* Azul petróleo */
+  background-color: #00567a; 
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -156,7 +154,7 @@ html, body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  font-family: 'Montserrat', sans-serif; /* Tipografía recomendada */
+  font-family: 'Montserrat', sans-serif; 
 }
 
 .cartel img {
@@ -168,7 +166,7 @@ html, body {
 
 .cartel-contenido {
   position: absolute;
-  left: 2rem; /* Se desplaza bien hacia la izquierda */
+  left: 2rem; 
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -186,9 +184,8 @@ html, body {
   letter-spacing: -0.5px;
 }
 
-/* Efecto para que la primera letra quede más grande */
 .cartel-contenido .letra-grande {
-  font-size: 3.2rem; /* Tamaño mayor para la primera letra */
+  font-size: 3.2rem;
   font-weight: 900;
   color: #000000;
   vertical-align: baseline;
@@ -202,7 +199,6 @@ html, body {
   letter-spacing: 0.2px;
 }
 
-/* Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
   .cartel-contenido {
     left: 1rem;
@@ -266,14 +262,13 @@ html, body {
   }
 }
 
-/* Estilos para la sección de Cursos Gratuitos */
 .seccion-gratuitos {
   padding: 3rem 0;
   font-family: 'Montserrat', sans-serif;
 }
 
 .subtitulo-gratuitos {
-  color: #198754; /* Verde institucional/gratuito */
+  color: #198754; 
   font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 1.5px;
@@ -400,7 +395,7 @@ html, body {
   position: absolute;
   top: 14px;
   left: 14px;
-  background-color: #c43e00; /* Naranja rojizo */
+  background-color: #c43e00; 
   color: #ffffff;
   font-size: 0.75rem;
   font-weight: 800;
@@ -413,7 +408,7 @@ html, body {
   position: absolute;
   bottom: 14px;
   left: 14px;
-  background: rgba(33, 43, 54, 0.85); /* Oscuro translúcido */
+  background: rgba(33, 43, 54, 0.85); 
   color: #ffffff;
   font-size: 0.8rem;
   font-weight: 700;
@@ -442,7 +437,7 @@ html, body {
 }
 
 .curso-rating .estrella {
-  color: #d96b00; /* Naranja/Dorado estrella */
+  color: #d96b00; 
   font-size: 1.1rem;
 }
 
@@ -464,7 +459,7 @@ html, body {
   margin-bottom: 1rem;
 }
 
-/* Detalles (módulos y coach) */
+
 .curso-info {
   list-style: none;
   padding: 0;
@@ -482,10 +477,9 @@ html, body {
   gap: 8px;
 }
 
-/* Botón VER CURSO */
 .btn-curso {
   margin-top: auto;
-  background-color: #00567a; /* Azul petróleo */
+  background-color: #00567a; 
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -510,7 +504,7 @@ html, body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  font-family: 'Montserrat', sans-serif; /* Tipografía recomendada */
+  font-family: 'Montserrat', sans-serif; 
 }
 
 .cartel img {
@@ -521,7 +515,7 @@ html, body {
 
 .cartel-contenido {
   position: absolute;
-  left: 2rem; /* Se desplaza bien hacia la izquierda */
+  left: 2rem; 
   top: 50%;
   transform: translateY(-50%);
   max-width: 50%;
@@ -538,9 +532,8 @@ html, body {
   letter-spacing: -0.5px;
 }
 
-/* Efecto para que la primera letra quede más grande */
 .cartel-contenido .letra-grande {
-  font-size: 3.2rem; /* Tamaño mayor para la primera letra */
+  font-size: 3.2rem; 
   font-weight: 900;
   color: #000000;
   vertical-align: baseline;
@@ -554,7 +547,6 @@ html, body {
   letter-spacing: 0.2px;
 }
 
-/* Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
   .cartel-contenido {
     left: 1rem;
@@ -616,14 +608,13 @@ html, body {
   }
 }
 
-/* Estilos para la sección de Cursos Gratuitos */
 .seccion-gratuitos {
   padding: 3rem 0;
   font-family: 'Montserrat', sans-serif;
 }
 
 .subtitulo-gratuitos {
-  color: #198754; /* Verde institucional/gratuito */
+  color: #198754; 
   font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 1.5px;
@@ -695,7 +686,7 @@ html, body {
 }
 
 .btn-gratuito {
-  background-color: #198754;
+  background-color: #00567a;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -708,13 +699,10 @@ html, body {
 }
 
 .btn-gratuito:hover {
-  background-color: #146c43;
+  background-color: #003d57;
   color: #ffffff;
 }
 
-/* --- BANNER CONTENEDOR PRINCIPAL --- */
-
-/* --- BANNER PRINCIPAL CON BENTO GRID Y AZUL CORPORATIVO --- */
 
 .banner-container {
   width: 100%;
@@ -731,7 +719,6 @@ html, body {
   align-items: center;
 }
 
-/* Responsivo para celulares y tablets */
 @media (max-width: 992px) {
   .banner-container {
     grid-template-columns: 1fr;
@@ -739,7 +726,6 @@ html, body {
   }
 }
 
-/* --- COLUMNA IZQUIERDA: TEXTOS Y BENEFICIOS --- */
 
 .banner-title {
   color: #ffffff;
@@ -756,7 +742,6 @@ html, body {
   margin-bottom: 1.5rem;
 }
 
-/* Grilla de 2 columnas para los ítems/beneficios */
 .banner-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -777,7 +762,6 @@ html, body {
   font-size: 1.2rem;
 }
 
-/* Acciones y Botón Azul */
 .banner-action {
   display: flex;
   align-items: center;
@@ -786,7 +770,7 @@ html, body {
 }
 
 .banner-action .btn-primary {
-  background-color: #00567a !important; /* Azul base asignado */
+  background-color: #00567a !important; 
   color: #ffffff !important;
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
@@ -798,7 +782,7 @@ html, body {
 }
 
 .banner-action .btn-primary:hover {
-  background-color: #003d57 !important; /* Azul hover asignado */
+  background-color: #003d57 !important; 
   transform: translateY(-2px);
 }
 
@@ -807,22 +791,19 @@ html, body {
   font-size: 0.85rem;
 }
 
-/* --- COLUMNA DERECHA: BENTO GRID DE IMÁGENES --- */
 
 .banner-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 180px); /* Altura controlada para las tarjetas */
-  gap: 1rem;
+  grid-template-rows: repeat(2, 180px); 
 }
 
-/* Corrección fundamental: evita que las imágenes se rompan */
 .banner-gallery .card {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 12px !important;
-  overflow: hidden !important; /* Corta la imagen sobrante */
+  overflow: hidden !important; 
   border: none !important;
   background-color: #12141d;
   margin: 0 !important;
@@ -831,25 +812,22 @@ html, body {
 .banner-gallery .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover !important; /* Adapta la imagen al cuadro sin deformar */
-  display: block;
+  object-fit: cover !important; 
   transition: transform 0.3s ease;
 }
 
-/* Sutil efecto de zoom en las fotos sin cambiar de color */
 .banner-gallery .card:hover img {
   transform: scale(1.05);
 }
 
-/* Distribución Bento Grid */
 .banner-gallery .card-tall {
   grid-column: 1;
-  grid-row: 1 / span 2; /* Ocupa 2 filas horizontales */
+  grid-row: 1 / span 2; 
 }
 
 .banner-gallery .card-person {
   grid-column: 2;
-  grid-row: 1 / span 2; /* Ocupa 2 filas horizontales */
+  grid-row: 1 / span 2; 
 }
 
 .banner-gallery .card-small-top {
@@ -862,7 +840,6 @@ html, body {
   grid-row: 2;
 }
 
-/* Botón y Certificación (Estilo Táctico/Deportivo) */
 .banner-action {
   display: flex;
   flex-direction: column;
@@ -872,7 +849,7 @@ html, body {
 }
 
 .btn-primary {
-  background-color: #003d57; /* Verde táctico / deportivo */ 
+  background-color: #003d57; 
   color: #0d1b2a;
   padding: 12px 28px;
   border-radius: 8px;
@@ -893,7 +870,7 @@ html, body {
   font-size: 0.8rem;
 }
 
-/* --- COLUMNA DERECHA (BENTO GRID) --- */
+
 .banner-gallery {
   flex: 1;
   display: grid;
@@ -903,7 +880,6 @@ html, body {
   width: 100%;
 }
 
-/* --- SECCIÓN CERTIFICACIONES Y TITULACIONES (ESTILO IMAGEN 2) --- */
 
 .certificaciones-section {
   width: 100%;
@@ -913,7 +889,6 @@ html, body {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
-/* Header */
 .certificaciones-header {
   margin-bottom: 30px;
   text-align: left;
@@ -933,7 +908,6 @@ html, body {
   line-height: 1.5;
 }
 
-/* Grilla */
 .certificaciones-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -946,7 +920,6 @@ html, body {
   }
 }
 
-/* Tarjeta principal */
 .certi-card {
   background: #ffffff;
   border-radius: 20px;
@@ -958,7 +931,6 @@ html, body {
   justify-content: space-between;
 }
 
-/* Bloque Superior de la Tarjeta */
 .certi-card-top {
   background-color: #f0f5ff; /* Azul pastel claro */
   border-radius: 16px;
@@ -969,7 +941,6 @@ html, body {
   align-items: center;
 }
 
-/* Icono central circular */
 .certi-icon {
   width: 48px;
   height: 48px;
@@ -998,7 +969,6 @@ html, body {
   margin: 0 0 10px 0;
 }
 
-/* Insignias / Badges */
 .certi-badge {
   font-size: 0.7rem;
   font-weight: 800;
@@ -1018,7 +988,6 @@ html, body {
   color: #c05621;
 }
 
-/* Cuerpo de la Tarjeta */
 .certi-card-body {
   padding: 20px 8px 15px 8px;
 }
@@ -1038,7 +1007,6 @@ html, body {
   margin: 0;
 }
 
-/* Footer de la Tarjeta */
 .certi-card-footer {
   border-top: 1px dashed #e2e8f0;
   padding-top: 12px;
@@ -1055,17 +1023,14 @@ html, body {
 }
 
 .certi-card-footer strong {
-  color: #00567a; /* Color azul corporativo definido previa/en banner */
+  color: #00567a; 
   font-weight: 700;
 }
 
-/* --- ACORDEÓN CON EFECTO HOVER Y MÁXIMO ANCHO (1200PX) --- */
 
-/* Contenedor principal */
 .accordion {
   width: 100% !important;
-  max-width: 1200px !important; /* Mismo ancho que el banner principal */
-  margin: 20px auto !important;
+  max-width: 1200px !important;   margin: 20px auto !important;
   border-radius: 16px !important;
   background-color: #1a1c29 !important;
   border: 1px solid #2a2d3d !important;
@@ -1073,7 +1038,6 @@ html, body {
   overflow: hidden;
 }
 
-/* Ítems del acordeón */
 .accordion-item {
   background-color: transparent !important;
   border-bottom: 1px solid #2a2d3d !important;
@@ -1083,7 +1047,6 @@ html, body {
   border-bottom: none !important;
 }
 
-/* Botón del acordeón (estado normal) */
 .accordion-button {
   font-weight: 600;
   font-size: 1rem;
@@ -1094,30 +1057,25 @@ html, body {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-/* EFECTO HOVER: Cambia a verde táctico al pasar el cursor */
 .accordion-button:hover {
-  color: #00e676 !important;
+  color: #00567a !important;
 }
 
-/* Estado abierto / desplegado */
 .accordion-button:not(.collapsed) {
-  color: #00e676 !important;
+  color: #00567a !important;
   background-color: rgba(0, 230, 118, 0.05) !important;
 }
 
-/* Flecha desplegable en blanco por defecto */
 .accordion-button::after {
   filter: invert(1) brightness(200%);
   transition: transform 0.3s ease, filter 0.2s ease;
 }
 
-/* Flecha verde táctico al estar abierto o al hacer hover */
 .accordion-button:not(.collapsed)::after,
 .accordion-button:hover::after {
   filter: invert(53%) sepia(93%) saturate(1455%) hue-rotate(106deg) brightness(101%) contrast(106%);
 }
 
-/* Cuerpo de la respuesta */
 .accordion-body {
   color: #a0a5b5 !important;
   font-size: 0.95rem;
@@ -1126,32 +1084,35 @@ html, body {
 }
 
 
-.footer{
+.footer {
   margin-top: 40px;
   background-color: #24262b;
   padding: 80px 0;
-
 }
 
-.contFooter{
+.contFooter {
   max-width: 1200px;
   margin: 0 auto;
-
 }
 
-.footer-row{
+.footer-row {
   display: flex;
   flex-wrap: wrap;
-
 }
 
-.footer-links{
+.footer-links {
   width: 25%;
   padding: 0 15px;
-
+  box-sizing: border-box;
 }
 
-.footer-links h4{
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links h4 {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 25px;
@@ -1160,19 +1121,38 @@ html, body {
   display: inline-block;
 }
 
-.footer-links ul li a{
+.footer-links ul li a {
   font-size: 18px;
   text-decoration: none;
   color: #bbbbbb;
   display: block;
   margin-bottom: 15px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.footer-links ul li a:hover{
+.footer-links ul li a:hover {
   color: #ffffff;
   padding-left: 6px;
+}
 
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #ffffff; /* Color blanco para los íconos */
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+  color: #24262b;
+  background-color: #00c3ff;
 }
 
 .socialink a{
@@ -1204,7 +1184,6 @@ html, body {
 
 }
 
-/* --- ENCABEZADO DE CURSOS DESTACADOS CON BOTÓN A LA DERECHA --- */
 
 .cursos-header {
   width: 100%;
@@ -1212,13 +1191,12 @@ html, body {
   margin: 40px auto 20px auto;
   padding: 0 15px;
   display: flex;
-  justify-content: space-between; /* Alinea título a la izquierda y botón a la derecha */
+  justify-content: space-between; 
   align-items: center;
-  flex-wrap: wrap; /* Para adaptarse en celulares */
+  flex-wrap: wrap; 
   gap: 15px;
 }
 
-/* Título */
 .cursos-title {
   color: #ffffff;
   font-size: 2rem;
@@ -1226,15 +1204,14 @@ html, body {
   margin: 0;
 }
 
-/* Botón Rectangular con Border-Radius y Flecha */
 .btn-cursos {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background-color: #00567a; /* Color azul corporativo */
+  background-color: #00567a; 
   color: #ffffff;
   padding: 12px 24px;
-  border-radius: 10px; /* Bordes redondeados sobrios */
+  border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 700;
   text-decoration: none;
@@ -1243,43 +1220,38 @@ html, body {
 }
 
 .btn-cursos:hover {
-  background-color: #003d57; /* Color hover azul oscuro */
+  background-color: #003d57; 
   border-color: #003d57;
   color: #ffffff;
   transform: translateY(-2px);
 }
 
-/* Animación sutil de la flecha al hacer hover */
 .btn-cursos svg {
   transition: transform 0.2s ease;
 }
 
 .btn-cursos:hover svg {
-  transform: translateX(4px); /* Desplaza suavemente la flecha a la derecha */
+  transform: translateX(4px); 
 }
 
-/* --- SECCIÓN CERTIFICACIONES Y DIPLOMAS (CON IMÁGENES Y SIN BOTÓN) --- */
 
-/* Contenedor principal de la tarjeta */
 .card {
-  background-color: #1a1c29 !important; /* Mismo fondo oscuro */
+  background-color: #1a1c29 !important; 
   border: 1px solid #2a2d3d !important;
   border-radius: 16px !important;
-  overflow: hidden; /* Mantiene la imagen recortada dentro del borde redondeado */
+  overflow: hidden; 
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* Efecto hover sobre la tarjeta */
 .card:hover {
   transform: translateY(-6px);
-  border-color: #00e676 !important; /* Borde verde táctico */
+  border-color: #00e676 !important; 
   box-shadow: 0 12px 30px rgba(0, 230, 118, 0.15) !important;
 }
 
-/* Contenedor e imagen superior */
-.card-img-wrapper {
+¿.card-img-wrapper {
   width: 100%;
-  height: 180px; /* Altura fija para que todas las imágenes queden uniformes */
+  height: 180px; 
   overflow: hidden;
   background-color: #12141d;
 }
@@ -1287,22 +1259,19 @@ html, body {
 .card-img-top {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  object-fit: cover; 
   transition: transform 0.4s ease;
 }
 
-/* Efecto de zoom leve en la imagen al hacer hover sobre la tarjeta */
 .card:hover .card-img-top {
   transform: scale(1.05);
 }
 
-/* Cuerpo de la tarjeta */
 .card-body {
   padding: 1.5rem;
   color: #ffffff;
 }
 
-/* Título de la tarjeta */
 .card-title {
   color: #ffffff !important;
   font-size: 1.2rem;
@@ -1310,7 +1279,6 @@ html, body {
   margin-bottom: 0.8rem;
 }
 
-/* Texto de la tarjeta */
 .card-text {
   color: #a0a5b5 !important;
   font-size: 0.93rem;
@@ -1318,30 +1286,27 @@ html, body {
   margin-bottom: 0;
 }
 
-/* --- ESTILO DE ENCABEZADO Y TEXTO (IMAGEN DE REFERENCIA) --- */
 
 .Form {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto 30px auto;
+  margin: 0 0 30px 0;
   padding: 0 15px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Título principal: tipografía pesada, tono oscuro y tipografía limpia */
 .Form h1 {
-  color: #0b132a; /* Azul noche muy oscuro/casi negro */
-  font-size: 2.25rem; /* ~36px */
-  font-weight: 800; /* Extra bold */
-  letter-spacing: -0.02em; /* Compresión ligera del espaciado como en la foto */
+  color: #0b132a; 
+  font-size: 2.25rem; 
+  font-weight: 800; 
+  letter-spacing: -0.02em; 
   line-height: 1.2;
   margin: 0 0 12px 0;
 }
 
-/* Subtítulo / Descripción */
 .Form p {
-  color: #4b5563; /* Gris intermedio para contraste suave */
-  font-size: 1rem; /* 16px */
+  color: #4b5563; 
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   max-width: 900px;
