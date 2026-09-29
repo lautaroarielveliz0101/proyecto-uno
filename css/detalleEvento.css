@@ -1,0 +1,325 @@
+.containerEvento {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+
+.containerInformacion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerInformacion h1 {
+  font-family: var(--font-category, 'Montserrat', sans-serif);
+  font-weight: 800;
+  font-size: 2rem;
+  color: #0b1e36;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.containerInformacion > p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin: 0;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+/* Cápsula de Información */
+.badgeInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #eff5ff;
+  border-radius: 50px;
+  padding: 16px 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #5a6e85;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0b1e36;
+}
+
+/* Sección Mapa */
+.mapaSection {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mapaSection h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0b1e36;
+  margin: 0;
+}
+
+.mapaContainer {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.mapaContainer iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Columna Derecha: Tarjeta */
+.ContainerTarjeta {
+  width: 420px;
+  height: 600px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border-radius: 28px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.cardImgText {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cardImgText img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.badgeEventsCash {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #c04000;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  z-index: 2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlayText .subTitleEvents {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.overlayText .mainTitleEvents {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.cardBody {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.card-confirm {
+  background-color: #f0f5ff;
+  border-radius: 16px;
+  padding: 12px 16px;
+}
+
+.card-confirm p {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #2b3648;
+  line-height: 1.3;
+}
+
+.card-jornada {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.jornadaTitle {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #1a202c;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.jornadaBotones {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.btnJornada {
+  flex: 1;
+  padding: 8px 10px;
+  background-color: #f0f5ff;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btnJornada:hover {
+  background-color: #e0ecff;
+}
+
+.btnJornada.active {
+  background-color: #005073;
+  color: #ffffff;
+}
+
+.card-cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eff5ff;
+  border-radius: 50px;
+  padding: 10px 18px;
+}
+
+.cantidad-titulo {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #0b1e36;
+  margin: 0;
+}
+
+.cantidad-subtitulo {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #5a6e85;
+  margin: 0;
+}
+
+.cantidad-contador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  color: #0b1e36;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease;
+}
+
+.btn-step:hover {
+  transform: scale(1.08);
+}
+
+.cantidad-numero {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #005073;
+  min-width: 16px;
+  text-align: center;
+}
+
+.btnCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px 10px ;
+  background-color: #005073;
+  color: #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+.btnCard:hover {
+  background-color: #003852;
+  color: #ffffff;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 992px) {
+  .containerEvento {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ContainerTarjeta {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .badgeInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 20px;
+    padding: 16px;
+  }
+}
